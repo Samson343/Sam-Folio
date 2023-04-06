@@ -5,7 +5,7 @@
   height: 100vh;
   margin: auto;
   width: 100%;
-  background-color: rgb(27, 43, 43);
+  background-color: rgb(25, 34, 34);
 }
 .image {
     height: 26vmin;
@@ -20,15 +20,15 @@
     margin-left: 20vmin;
 }
 .topBar {
-    width: 80%;
+    width: 75%;
     position: absolute;
-    margin-bottom: 55vh;
+    margin-bottom: 60vh;
     background-color: rgb(149, 11, 11);
 }
 .botBar {
-    width: 80%;
+    width: 75%;
     position: absolute;
-    margin-top: 55vh;
+    margin-top: 60vh;
     background-color: rgb(149, 11, 11);
 }
 .leftBarLeftBefore {
@@ -43,11 +43,11 @@
     justify-content:center;
     align-items:center;
     position: absolute;
-    margin-right: 70vmin;
+    margin-right: 65vmin;
 }
 .leftBarAfter {
     border-color: rgb(191, 152, 186);
-    margin-right: 50vmin;
+    margin-right: 40vmin;
 } 
 .loadingBarRight { 
     border: 1px solid black; 
@@ -58,12 +58,12 @@
     justify-content:center;
     align-items:center;
     position: absolute;
-    margin-left: 30vmin;
+    margin-left: 25vmin;
 }
 
 .rightBarAfter {
     border-color: rgb(191, 152, 186);
-    margin-left: 50vmin;
+    margin-left: 40vmin;
 } 
 
 .flip {
@@ -76,8 +76,12 @@
 }
 
 .fadeOut {
-    -webkit-animation: fade-out 1s ease-out 2.5s both;
-	        animation: fade-out 1s ease-out 2.5s both;
+    -webkit-animation: fade-out 1s ease-out 2s both;
+	        animation: fade-out 1s ease-out 2s both;
+}
+.fadeOutDelayed {
+    -webkit-animation: fade-out 1s ease-out 2.6s both;
+	        animation: fade-out 1s ease-out 2.6s both;
 }
 
 @-webkit-keyframes fade-out {
