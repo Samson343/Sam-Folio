@@ -45,14 +45,58 @@
     max-width: 10%;
     align-self: center;
 }
+.flowerImage {
+    width: 10%;
+}
 
 .email {
     font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
     writing-mode: vertical-rl;
     font-size: calc(7px + 0.8vmin);
     color: var(--fontColor);
-    margin: 1vmin 0 0 1vmin;
+    margin: 0vmin 25vmin 0 1vmin;
 }
+
+
+.textExpand {
+    align-self: center;
+    margin-bottom: 2vh;
+    margin-right: 40vmin;
+    font-size: calc(7px + 0.8vmin);
+    color: white;
+	-webkit-animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes focus-in-contract {
+    0% {
+        letter-spacing: 1em;
+        -webkit-filter: blur(12px);
+                filter: blur(12px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
+        opacity: 1;
+      }
+    }
+  @keyframes focus-in-contract {
+    0% {
+        letter-spacing: 1em;
+        -webkit-filter: blur(12px);
+                filter: blur(12px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
+        opacity: 1;
+      }
+    }
+  
+
+
 
 :root {
     --primary: rgba(17, 38, 64, 1);
@@ -65,10 +109,10 @@
 
     --fontColor: rgb(255, 255, 255);
     
-    --primary: rgb(14, 30, 51);
+    --primary: #05142a;
     --electricblue: rgba(0, 192, 255, 1);
     --electricpurple: rgba(132, 0, 255, 1);
-    --electricgreen: rgba(0, 255, 140, 1);
+    --electricgreen: #5defcd;
     --orange: rgba(255, 133, 0, 1);
     --magenta: rgba(255, 0, 232, 1);
     --red: rgba(255, 0, 0, 1);

@@ -5,7 +5,7 @@
   height: 100vh;
   margin: auto;
   width: 100%;
-  background-color: rgb(25, 34, 34);
+  background-color: var(--dark-navy);
 }
 .image {
     height: 26vmin;
@@ -14,7 +14,7 @@
     margin-right: 20vmin;
     object-fit: cover;
     border: 6px solid rgb(59, 59, 59, 0.9);
-    box-shadow: 1px 1px 500px 0px rgb(77, 76, 76);
+    box-shadow: 1px 1px 500px 0px rgb(53, 52, 52);
 }
 .imageAfter {
     margin-left: 20vmin;
@@ -35,7 +35,7 @@
     margin-right: 10vmin;
 }
 .loadingBarLeft {
-    border: 1px solid black; 
+    border: 1px solid rgb(185, 185, 185); 
     border-radius: 50%; 
     width: 6vmin; 
     height: 6vmin;
@@ -47,10 +47,10 @@
 }
 .leftBarAfter {
     border-color: rgb(191, 152, 186);
-    margin-right: 40vmin;
+    margin-right: 45vmin;
 } 
 .loadingBarRight { 
-    border: 1px solid black; 
+    border: 1px solid rgb(190, 190, 190); 
     border-radius: 50%; 
     width: 6vmin; 
     height: 6vmin;
@@ -63,7 +63,7 @@
 
 .rightBarAfter {
     border-color: rgb(191, 152, 186);
-    margin-left: 40vmin;
+    margin-left: 45vmin;
 } 
 
 .flip {
