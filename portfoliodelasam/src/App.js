@@ -21,7 +21,7 @@ function App() {
           </>
           } 
         />
-        <Route exact path='/' element={
+        <Route exact path='/about' element={
           <>
             <About
               setRouteTo={ setRouteTo }

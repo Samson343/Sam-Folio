@@ -1,0 +1,115 @@
+.homeRoot {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--primary);
+}
+.accent1 {
+    min-width: 10%;
+    min-height: 10%;
+    margin-left: 20px;
+    background-color: var(--electricblue);
+}
+.accent2 {
+    width: 1%;
+    margin-left: 20px;
+    background-color: var(--electricpurple);
+}
+.accent3 {
+    width: 1%;
+    margin-left: 20px;
+    background-color: var(--electricgreen);
+}
+.accent4 {
+    width: 1%;
+    margin-left: 20px;
+    background-color: var(--orange);
+}
+.accent5 {
+    width: 1%;
+    margin-left: 20px;
+    background-color: var(--magenta);
+}
+.button {
+    background-color: rgba(100,255,218,0);
+    color: var(--electricgreen);
+    border-color: var(--electricgreen);
+    padding: 10px;
+    align-self: center;
+}
+.button:hover {
+    background-color: var(--electricpurple);
+}
+.penisLink {
+    max-width: 10%;
+    align-self: center;
+}
+
+.email {
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    writing-mode: vertical-rl;
+    font-size: calc(7px + 0.8vmin);
+    color: var(--fontColor);
+    margin: 1vmin 0 0 1vmin;
+}
+
+:root {
+    --primary: rgba(17, 38, 64, 1);
+    --electricblue: rgba(0, 192, 255, 1);
+    --electricpurple: rgba(132, 0, 255, 1);
+    --electricgreen: rgba(0, 255, 140, 1);
+    --orange: rgba(255, 133, 0, 1);
+    --magenta: rgba(255, 0, 232, 1);
+    --red: rgba(255, 0, 0, 1);
+
+    --fontColor: rgb(255, 255, 255);
+    
+    --primary: rgb(14, 30, 51);
+    --electricblue: rgba(0, 192, 255, 1);
+    --electricpurple: rgba(132, 0, 255, 1);
+    --electricgreen: rgba(0, 255, 140, 1);
+    --orange: rgba(255, 133, 0, 1);
+    --magenta: rgba(255, 0, 232, 1);
+    --red: rgba(255, 0, 0, 1);
+
+
+
+
+    --dark-navy: #020c1b;
+    --navy: #0a192f;
+    --light-navy: #112240;
+    --lightest-navy: #233554;
+    --navy-shadow: rgba(2,12,27,0.7);
+    --dark-slate: #495670;
+    --slate: #8892b0;
+    --light-slate: #a8b2d1;
+    --lightest-slate: #ccd6f6;
+    --white: #e6f1ff;
+    --green: #64ffda;
+    --green-tint: rgba(100,255,218,0.1);
+    --pink: #f57dff;
+    --blue: #57cbff;
+    --font-sans: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    --fz-xxs: 12px;
+    --fz-xs: 13px;
+    --fz-sm: 14px;
+    --fz-md: 16px;
+    --fz-lg: 18px;
+    --fz-xl: 20px;
+    --fz-xxl: 22px;
+    --fz-heading: 32px;
+    --border-radius: 4px;
+    --nav-height: 100px;
+    --nav-scroll-height: 70px;
+    --tab-height: 42px;
+    --tab-width: 120px;
+    --easing: cubic-bezier(0.645,0.045,0.355,1);
+    --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    --hamburger-width: 30px;
+    --ham-before: top 0.1s ease-in 0.25s,opacity 0.1s ease-in;
+    --ham-before-active: top 0.1s ease-out,opacity 0.1s ease-out 0.12s;
+    --ham-after: bottom 0.1s ease-in 0.25s,transform 0.22s cubic-bezier(0.55,0.055,0.675,0.19);
+    --ham-after-active: bottom 0.1s ease-out,transform 0.22s cubic-bezier(0.215,0.61,0.355,1) 0.12s;
+}
