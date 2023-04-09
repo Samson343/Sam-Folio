@@ -4,13 +4,14 @@ import { Routes, Route } from 'react-router-dom';
 import LoadingMain from './Components/LoadingMain';
 import About from './Components/About'
 import Home from './Components/Home';
+import NavBar from './Components/NavBar'
+import styles from './App.css'
 
 function App() {
   const [ routeTo, setRouteTo ] = useState('')
 
   return (
-    <div>
-
+    <div className={styles.appRoot}>
       <Routes>
         <Route path='/loading' element={
           <>
@@ -31,6 +32,7 @@ function App() {
         />
         <Route path='/home' element={
           <>
+           <NavBar/>
             <Home
               setRouteTo={ setRouteTo }
             />

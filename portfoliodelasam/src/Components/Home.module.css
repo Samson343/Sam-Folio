@@ -12,6 +12,17 @@
     background-color: var(--primary);
     
 }
+
+.topLeftDiagonal {
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-bottom: 10px solid transparent;
+	border-right: 10px solid rgb(126, 34, 34);
+}
+
 .accent1 {
     min-width: 10%;
     min-height: 10%;
@@ -51,14 +62,15 @@
     width: 50%;
 }
 
+
 .button {
     background-color: rgba(100,255,218,0);
     color: var(--electricgreen);
     border-color: var(--electricgreen);
-    padding: 10px;
+    padding: 8px;
     align-self: center;
     font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
-    font-size: calc(7px + 0.78vmin);
+    font-size: calc(5.5px + 0.78vmin);
 }
 .button:hover {
     background-color: var(--electricpurple);
@@ -76,7 +88,7 @@
     border-top: 1px solid var(--dark-slate);
     border-right: 1px solid var(--dark-slate);
     /* margin: 35vh 0 0 50vw */
-    margin-left: 35vmin;
+    margin-left: 40vmin;
 }
 .borderBottom {
     /* position: absolute; */
@@ -84,7 +96,7 @@
     height: 5vh;
     border-left: 1px solid var(--dark-slate);
     border-bottom: 1px solid var(--dark-slate);
-    margin-right: 35vmin;
+    margin-right: 40vmin;
     /* margin: 55vh 0 0 34vw */
 }
 
@@ -94,6 +106,9 @@
     align-content: center;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    width: 99%;
+    margin-top: 17%;
 }
 
 .flowerImage2 {
@@ -138,7 +153,6 @@
     align-items: center;
     max-width: 15%;
     min-height: 40vh;
-
 }
 .emailLine {
     border-left: 2px solid white;
@@ -147,7 +161,12 @@
 }
 
 .socialIcons {
-    color: white;
+    color: var(--light-slate);
+    margin-bottom: 15px;
+}
+
+.socialIcons:hover {
+    color: var(--lightest-slate);
     margin-bottom: 15px;
 }
 
@@ -157,10 +176,16 @@
    margin:0;
    margin-bottom: 1.2%;  
    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
-   font-size: calc(16px + 2.5vmin);
+   font-size: calc(11.5px + 2.8vmin);
    text-shadow:var(--dark-slate) 1.5px 1.5px;
    -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;  
+   -moz-osx-font-smoothing: grayscale;
+}
+.descriptionText {
+    margin-top: 0;
+    max-width: 25%;
+    color: var(--dark-slate);
+    font-size: calc(8);
 }
 
 .textExpand {
@@ -326,6 +351,7 @@
     --orange: rgba(255, 133, 0, 1);
     --magenta: rgba(255, 0, 232, 1);
     --red: rgba(255, 0, 0, 1);
+    --dark-slate-transparent: rgb(72, 86, 113, 0.5);
 
 
 

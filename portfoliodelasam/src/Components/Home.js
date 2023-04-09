@@ -20,6 +20,7 @@ function Home({ setRouteTo }) {
               <span className= {styles.borderTop}></span>
               <p className={styles.textExpand}>hello, my name is,</p>
               <p className={styles.nameText}>Samuel Banister</p>
+              <p className={styles.descriptionText}>Builder of websites, doer of things. My cats are my best friends and they annoy the hell out of me</p>
               <Link to='/loading' className={styles.penisLink}>
                 <button className={styles.button}
                     onClick={() => {
@@ -34,7 +35,6 @@ function Home({ setRouteTo }) {
 
             <div className={styles.topLeftWrapper}>
                 {/* <span className={styles.email}>sam.ban@gmail.com</span> */}
-
                 <FiGithub className={`${styles.socialIcons} ${styles.slideInBottom}`} size={'2.3vmin'} />
                 <SiCodewars className={`${styles.socialIcons} ${styles.slideInBottom}`} size={'2vmin'} />
                 <AiFillLinkedin className={`${styles.socialIcons} ${styles.slideInBottom}`} size={'2.3vmin'} />
