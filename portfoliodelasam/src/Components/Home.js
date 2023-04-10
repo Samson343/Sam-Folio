@@ -7,6 +7,7 @@ import { SiCodewars } from 'react-icons/si'
 
 
 function Home({ setRouteTo }) {
+
     return (
         <div className={styles.homeRoot}>
             <div className={`${styles.emailWrapper}`}>
@@ -43,6 +44,9 @@ function Home({ setRouteTo }) {
                 <p className={`${styles.emailLine} ${styles.slideInBottom}`}></p>
                 <img className={styles.flowerImage7} src="flowerVine8.png" alt="white flowers"></img>
             </div>
+            <div className={styles.bottomLeftDiagonal}></div>
+            <div className={styles.topLeftDiagonal}></div>
+
             {/* <img className = {styles.flowerImage2} src="flowerVine2.png" alt="white flowers"></img> */}
             <p className={styles.accent1}></p>
             <p className={styles.accent2}></p>
@@ -56,7 +60,7 @@ function Home({ setRouteTo }) {
             {/* <img className = {styles.flowerImage5} src="flowerVine6.png" alt="white flowers"></img> */}
             {/* <img className = {styles.flowerImage6} src="flowerVine7.png" alt="white flowers"></img> */}
 
-
+            
         </div>
 
     )
