@@ -9,9 +9,13 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 200vh;
+    min-height: 100vh;
     background-color: var(--primary);
-
+}
+.aboutRoot {
+    top: 0;
+    height: 100vh;
+    background-color: var(--primary);
 }
 
 .bottomLeftDiagonal {
@@ -27,7 +31,7 @@
     transform-origin: left;
     position: absolute;
     margin-top: 74.5vmin;
-    margin-top: 58.5vmin;
+    margin-top: 58.5vh;
     -webkit-animation: rotate-90-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940)  both;
 	        animation: rotate-90-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940)  both;
 }
@@ -79,7 +83,8 @@
     /* margin-bottom: 24vmin; */
     align-self: center;
     /* margin-top: 16.5%; */
-    top: 0
+    top: 0;
+    margin-top: 0.7vmin
 }
 
 .borderBottom {
@@ -95,6 +100,7 @@
     margin-right: 45vmin;
     /* margin-top: 28.5%; */
     bottom: 0;
+    margin-bottom: 0.7vmin;
 }
 
 .centerWrapper {
@@ -105,18 +111,11 @@
     align-items: center;
     position: absolute;
     width: 99%;
-    margin-top: 17.5%;
-    padding-top: 3.2vmin;
-    padding-bottom: 3.2vmin;
-}
-
-.flowerImage2 {
-    width: 10%;
-    position: absolute;
-    right:0;
-    margin-top: 135vh;
-    -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    /* margin-top: 17.5%; */
+    height: 32%;
+    margin-top: 30vh;
+    /* padding-top: 3.2vmin;
+    padding-bottom: 3.2vmin; */
 }
 
 .flowerImage3 {
@@ -465,9 +464,22 @@ body::-webkit-scrollbar-track-piece {
   .aboutBackground {
     background-color: rgb(74, 86, 112, 0.6);
     position: absolute;
-    height: 20vh;
+    height: 40vh;
     width: 20vmin;
     width: 40%;
-    margin-left: 30%;
-    margin-top: 135vmin;
+    min-width: 50vmin;
+    margin-left: 30vw;
+    margin-right: 30vw;
+    margin-top: 30vh;
+    border-radius: 2px;
   }
+
+  .flowerImage2 {
+    width: 10%;
+    min-width: 15vh;
+    position: absolute;
+    right:0;
+    margin-top: 36vh;
+    -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}

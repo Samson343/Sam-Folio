@@ -19,6 +19,7 @@ function Home({ setRouteTo }) {
       }, []);
 
     return (
+        <>
         <div className={styles.homeRoot}>
             <div className={`${styles.emailWrapper}`}>
                 <img className={styles.flowerImage8} src="flowerVine5.png" alt="white flowers"></img>
@@ -52,15 +53,22 @@ function Home({ setRouteTo }) {
             </div>
             <div className={`${styles.bottomLeftDiagonal}`}></div>
 
-            { scrollPosition >= 700 &&
-              <img className = {styles.flowerImage2} src="flowerVine2.png" alt="white flowers"></img>
-            }
             {/* <img className = {styles.flowerImage3} src="flowerVine3.png" alt="white flowers"></img>
             <img className = {styles.flowerImage4} src="flowerVine4.png" alt="white flowers"></img>
             <img className = {styles.flowerImage5} src="flowerVine6.png" alt="white flowers"></img> */}
             {/* <img className = {styles.flowerImage6} src="flowerVine7.png" alt="white flowers"></img> */}
-            <div className={styles.aboutBackground}></div>
+            
         </div>
+        <div className={styles.aboutRoot}>
+
+            <div className={styles.aboutBackground}>
+                <p className={styles.aboutDescription}>I'm a career changer jumping into tech from a background of dietetics. Since I'm late to the party I know I have to show up with all the best part favors to make up for it. That's why I study late into the night, get a handle on the bleeding edge of tech, and pour my heart into everything I create. </p>
+            </div>
+            { scrollPosition >= 700 &&
+              <img className = {styles.flowerImage2} src="flowerVine2.png" alt="white flowers"></img>
+            }
+        </div>
+        </>
     )
 }
 
