@@ -2,6 +2,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     /* border: 1px solid white */
+    overflow-x:hidden
 }
 
 .homeRoot {
@@ -15,58 +16,20 @@
 
 .bottomLeftDiagonal {
     /* margin-top: 25vmin; */
-    border: 2px solid var(--electricgreen);
-    height: 50vmin;
-    width: 50vmin;
+    border: 2px solid var(--slate);
+    height: 30vmin;
+    width: 30vmin;
+    height: 48vmin;
+    width: 48vmin;
 
     transform: rotate(45deg);
 
     transform-origin: left;
     position: absolute;
-    margin-top: 57vmin;
-
-}
-/* .topLeftDiagonal {
-    
-    border-bottom: 2px solid var(--electricgreen);
-    
-    width: 25%;
-
-    transform: rotate(-45deg);
-
-    transform-origin: left;
-    margin-top: 69.2vh;
-} */
-
-.accent1 {
-    min-width: 10%;
-    min-height: 10%;
-    margin-left: 20px;
-    background-color: var(--electricblue);
-}
-
-.accent2 {
-    width: 1%;
-    margin-left: 20px;
-    background-color: var(--electricpurple);
-}
-
-.accent3 {
-    width: 1%;
-    margin-left: 20px;
-    background-color: var(--electricgreen);
-}
-
-.accent4 {
-    width: 1%;
-    margin-left: 20px;
-    background-color: var(--orange);
-}
-
-.accent5 {
-    width: 1%;
-    margin-left: 20px;
-    background-color: var(--magenta);
+    margin-top: 74.5vmin;
+    margin-top: 58.5vmin;
+    -webkit-animation: rotate-90-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940)  both;
+	        animation: rotate-90-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940)  both;
 }
 
 .topLeftWrapper {
@@ -85,12 +48,11 @@
 
 }
 
-
 .button {
     background-color: rgba(100, 255, 218, 0);
     color: var(--electricgreen);
     border-color: var(--electricgreen);
-    padding: 8px;
+    padding: calc(4px + 0.35vmin);
     align-self: center;
     font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
     font-size: calc(5.5px + 0.78vmin);
@@ -107,23 +69,32 @@
 }
 
 .borderTop {
-    /* position: absolute; */
+    position: absolute;
     width: 15%;
     height: 4.5vh;
     border-top: 1px solid var(--dark-slate);
     border-right: 1px solid var(--dark-slate);
     /* margin: 35vh 0 0 50vw */
     margin-left: 45vmin;
+    /* margin-bottom: 24vmin; */
+    align-self: center;
+    /* margin-top: 16.5%; */
+    top: 0
 }
 
 .borderBottom {
-    /* position: absolute; */
+    position: absolute;
     width: 15%;
     height: 4.5vh;
     border-left: 1px solid var(--dark-slate);
     border-bottom: 1px solid var(--dark-slate);
-    margin-right: 45vmin;
+    /* margin-right: 45vmin; */
     /* margin: 55vh 0 0 34vw */
+    /* margin-top: 24vmin; */
+    align-self: center;
+    margin-right: 45vmin;
+    /* margin-top: 28.5%; */
+    bottom: 0;
 }
 
 .centerWrapper {
@@ -134,11 +105,18 @@
     align-items: center;
     position: absolute;
     width: 99%;
-    margin-top: 17%;
+    margin-top: 17.5%;
+    padding-top: 3.2vmin;
+    padding-bottom: 3.2vmin;
 }
 
 .flowerImage2 {
     width: 10%;
+    position: absolute;
+    right:0;
+    margin-top: 135vh;
+    -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .flowerImage3 {
@@ -210,17 +188,18 @@
     margin: 0;
     margin-bottom: 1.2%;
     font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
-    font-size: calc(10.5px + 2.8vmin);
+    font-size: calc(10px + 2.8vmin);
     text-shadow: var(--dark-slate) 1.5px 1.5px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    /* font-weight: 600; */
 }
 
 .descriptionText {
     margin-top: 0;
     max-width: 25%;
     color: var(--dark-slate);
-    font-size: calc(8);
+    font-size: calc(8px + 0.8vmin);
 }
 
 .textExpand {
@@ -229,8 +208,8 @@
     margin-right: 40vmin;
     font-size: calc(7px + 0.8vmin);
     color: var(--light-slate);
-    -webkit-animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
+    animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
 }
 
 @-webkit-keyframes focus-in-contract {
@@ -375,9 +354,6 @@ body::-webkit-scrollbar-track-piece {
     border-radius: 2%;
 }
 
-
-
-
 :root {
     --primary: rgba(17, 38, 64, 1);
     --electricblue: rgba(0, 192, 255, 1);
@@ -438,3 +414,60 @@ body::-webkit-scrollbar-track-piece {
     --ham-after: bottom 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
     --ham-after-active: bottom 0.1s ease-out, transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
 }
+
+@-webkit-keyframes rotate-90-cw {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+    }
+  }
+  @keyframes rotate-90-cw {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+    }
+  }
+
+  @-webkit-keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+
+  .aboutBackground {
+    background-color: rgb(74, 86, 112, 0.6);
+    position: absolute;
+    height: 20vh;
+    width: 20vmin;
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 135vmin;
+  }
