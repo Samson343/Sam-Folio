@@ -13,6 +13,8 @@
     background-color: var(--primary);
 }
 .aboutRoot {
+    display: flex;
+    flex-direction: column;
     top: 0;
     height: 100vh;
     background-color: var(--primary);
@@ -59,7 +61,12 @@
     padding: calc(4px + 0.35vmin);
     align-self: center;
     font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    font-family: var(--font-sans);
     font-size: calc(5.5px + 0.78vmin);
+}
+.featuredLink {
+    text-decoration: none;
+    color: var(--electricgreen);
 }
 
 .button:hover {
@@ -154,6 +161,7 @@
 
 .email:hover {
     color: var(--lightest-slate);
+    margin-left: 3px;
 }
 
 .emailWrapper {
@@ -178,7 +186,7 @@
 
 .socialIcons:hover {
     color: var(--lightest-slate);
-    margin-bottom: 15px;
+    margin-left: 3px;
 }
 
 .nameText {
@@ -187,18 +195,22 @@
     margin: 0;
     margin-bottom: 1.2%;
     font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
-    font-size: calc(10px + 2.8vmin);
-    text-shadow: var(--dark-slate) 1.5px 1.5px;
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Proxima Nova', sans-serif;
+    font-family: 'Lato', sans-serif; */
+    font-size: calc(12px + 2.8vmin);
+    text-shadow: var(--slate) 0.5px 0.5px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /* font-weight: 600; */
+    font-weight: 600;
 }
 
 .descriptionText {
     margin-top: 0;
     max-width: 25%;
     color: var(--dark-slate);
-    font-size: calc(8px + 0.8vmin);
+    font-family: var(--font-sans);
+    font-size: calc(7px + 0.8vmin);
 }
 
 .textExpand {
@@ -207,6 +219,7 @@
     margin-right: 40vmin;
     font-size: calc(7px + 0.8vmin);
     color: var(--light-slate);
+    font-family: var(--font-sans);
     -webkit-animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
     animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s both;
 }
@@ -459,7 +472,9 @@ body::-webkit-scrollbar-track-piece {
       opacity: 1;
     }
   }
-  
+  .aboutRoot {
+
+  }
 
   .aboutBackground {
     background-color: rgb(74, 86, 112, 0.6);
@@ -467,13 +482,67 @@ body::-webkit-scrollbar-track-piece {
     height: 40vh;
     width: 20vmin;
     width: 40%;
-    min-width: 50vmin;
-    margin-left: 30vw;
-    margin-right: 30vw;
+    min-width: 42vw;
+    margin-left: 29vw;
+    margin-right: 29vw;
     margin-top: 30vh;
     border-radius: 2px;
+    box-shadow: 5px 5px var(--dark-slate);
+    transition: border-color 0.25s, box-shadow 0.25s, margin-top 0.25s, margin-left 0.25s;
   }
+  .aboutBackground:hover {
+    box-shadow: 1px 1px var(--slate);
+    margin-top: 29.8vh;
+    margin-left: 28.8vw;
+    opacity: 0.95;
+  }
+  .aboutDescription {
+    color: var(--fontColor);
+    padding: 15% 6% 3% 6%;
+    font-size: calc(8px + 0.75vmin);
+    font-family: var(--font-sans);
+    font-family: 'Open Sans', sans-serif;
+  }
+  .aboutPicture {
+    object-fit: cover;
+    width: 10%;
+    min-width: calc(70px + 7vmax);
+    position: absolute;
+    margin-left: 63vw;
+    margin-right: 29vw;
+    margin-top: 55vh;
+    border-radius: 3px;
+    opacity: 0.97;
+    box-shadow: 4px 5px var(--slate);
+    transition: border-color 0.25s, box-shadow 0.25s, margin-top 0.25s, margin-left 0.25s;
+  }
+  .aboutPicture:hover {
+    box-shadow: 1px 1px var(--slate);
+    margin-top: 54.8vh;
+    margin-left: 62.8vw;
+  }
+  /* .aboutPictureBackground {
+    object-fit: cover;
+    width: 10%;
+    height: 30%;
+    min-width: calc(70px + 7vmax);
+    position: absolute;
+    border: 2px solid white;
+    margin-left: 62vw;
+    margin-right: 29vw;
+    margin-top: 52vh;
+    border-radius: 2px;
 
+  } */
+  .listWrapper {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    font-size: calc(8px + 0.75vmin);
+    font-family: var(--font-mono);
+    color: var(--electricgreen);
+    /* font-family: 'Open Sans', sans-serif; */
+  }
   .flowerImage2 {
     width: 10%;
     min-width: 15vh;

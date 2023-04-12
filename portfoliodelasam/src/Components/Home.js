@@ -32,13 +32,13 @@ function Home({ setRouteTo }) {
               <p className={styles.textExpand}>hello, my name is,</p>
               <p className={styles.nameText}>Samuel Banister</p>
               <p className={styles.descriptionText}>Builder of websites, doer of things. My cats are my best friends and they annoy the hell out of me</p>
-              <Link to='/loading' className={styles.penisLink}>
-                <button className={styles.button}
-                    onClick={() => {
-                        setRouteTo('/about')
-                    }}
-                >See my Work</button>
-            </Link>
+              {/* <Link to='/loading' className={styles.penisLink}> */}
+                <button className={`${styles.button} ${styles.penisLink}`}
+                    // onClick={() => {
+                    //     setRouteTo('/about')
+                    // }}
+                ><a className = {styles.featuredLink} href="https://hike-seek.onrender.com/" target="blank">Featured Project</a></button>
+            {/* </Link> */}
             <span className= {styles.borderBottom}></span>  
             </div>
             
@@ -63,7 +63,23 @@ function Home({ setRouteTo }) {
 
             <div className={styles.aboutBackground}>
                 <p className={styles.aboutDescription}>I'm a career changer jumping into tech from a background of dietetics. Since I'm late to the party I know I have to show up with all the best part favors to make up for it. That's why I study late into the night, get a handle on the bleeding edge of tech, and pour my heart into everything I create. </p>
+                <div className={styles.listWrapper}>
+                <ul>
+                    <li>React</li>
+                    <li>CSS</li>
+                    <li>HTML5</li>
+                </ul>
+                <ul>
+                    <li>SQL</li>
+                    <li>Express</li>
+                    <li>Node</li>
+                </ul>
+                </div>
             </div>
+            <img className = {styles.aboutPicture} src = "Sam-about9.jpg" alt = "headshot"></img>
+            <div className = {styles.aboutPictureBackground}></div>
+            
+
             { scrollPosition >= 700 &&
               <img className = {styles.flowerImage2} src="flowerVine2.png" alt="white flowers"></img>
             }
