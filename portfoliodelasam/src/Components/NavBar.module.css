@@ -21,9 +21,11 @@
     user-select: none;
     font-family: var(--font-sans);
     font-size: calc(8px + 0.65vmin);
+    transition: color 0.25s, margin-right 0.25s;
 }
 .navLink:hover {
-    color: white
+    color: white;
+    margin-right:2px
 }
 .button {
     background-color: rgba(100,255,218,0);

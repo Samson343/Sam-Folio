@@ -9,6 +9,7 @@ import styles from './App.css'
 
 function App() {
   const [ routeTo, setRouteTo ] = useState('')
+  const [rotateBox, setRotateBox] = useState(false)
 
   return (
     <div className={styles.appRoot}>
@@ -32,9 +33,13 @@ function App() {
         />
         <Route path='/home' element={
           <>
-           <NavBar/>
+           <NavBar
+             rotateBox= { rotateBox }
+             setRotateBox= { setRotateBox }
+           />
             <Home
               setRouteTo={ setRouteTo }
+              rotateBox={ rotateBox }
             />
           </>
           } 
