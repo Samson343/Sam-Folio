@@ -1,10 +1,12 @@
 import React, {useState} from "react";
 import styles from './NavBar.module.css'
 
+
 function NavBar ({ rotateBox, setRotateBox }) {
-    const handleClick = () => {
+    
+    const handleClick = (scrollHere) => {
         window.scrollTo({
-          top: 1000, // the y-coordinate to scroll to
+          top: scrollHere, // the y-coordinate to scroll to
           behavior: 'smooth' // smooth scrolling animation
         });
       }
@@ -19,11 +21,17 @@ function NavBar ({ rotateBox, setRotateBox }) {
                             rotateBox ? 
                             setRotateBox(false) :
                             setRotateBox(true)
-                    handleClick()}} className={styles.navLink}>About me</span>
+                    handleClick(1000)}} className={styles.navLink}>About me</span>
             </div>
             <div className={styles.linkWrapper}>
                 <span className={styles.numbers}>.02</span>
-                <span className={styles.navLink}>Projects</span>
+                <span onClick={() => {
+                    
+                    console.log("rotate box", rotateBox)
+                        rotateBox ? 
+                        setRotateBox(false) :
+                        setRotateBox(true)
+                handleClick(2000)}} className={styles.navLink}>Projects</span>
             </div>
             <div className={styles.linkWrapper}>
                 <span className={styles.numbers}>.03</span>

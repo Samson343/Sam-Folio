@@ -27,23 +27,23 @@ function Home({ setRouteTo, rotateBox }) {
                     <p className={`${styles.emailLine} ${styles.slideInTop}`}></p>
                     <a href="mailto:sam.ban@gmail.com" className={`${styles.email} ${styles.slideInTop}`}>sam.ban@gmail.com</a>
                 </div>
-
-                <div className={styles.centerWrapper}>
-                    <span className={styles.borderTop}></span>
-                    <p className={styles.textExpand}>hello, my name is,</p>
-                    <p className={styles.nameText}>Samuel Banister</p>
-                    <p className={styles.descriptionText}>Builder of websites, doer of things. My cats are my best friends and they annoy the hell out of me. My wife keeps me tethered to planet earth.</p>
-                    {/* <Link to='/loading' className={styles.penisLink}> */}
-                    <a className = {styles.featuredLink} href="https://hike-seek.onrender.com/" target="blank">
-                        <button className={`${styles.button} ${styles.penisLink}`}
-                        // onClick={() => {
-                        //     setRouteTo('/about')
-                        // }}
-                        >Featured Project</button></a>
-                    {/* </Link> */}
-                    <span className={styles.borderBottom}></span>
+                <div className={styles.megaWrapper}>
+                    <div className={styles.centerWrapper}>
+                        <span className={styles.borderTop}></span>
+                        <p className={styles.textExpand}>hello, my name is,</p>
+                        <p className={styles.nameText}>Samuel Banister</p>
+                        <p className={styles.descriptionText}>Builder of websites, doer of things. My cats are my best friends and they annoy the hell out of me. My wife keeps me tethered to planet earth.</p>
+                        {/* <Link to='/loading' className={styles.penisLink}> */}
+                        <a className={styles.featuredLink} href="https://hike-seek.onrender.com/" target="blank">
+                            <button className={`${styles.button} ${styles.penisLink}`}
+                            // onClick={() => {
+                            //     setRouteTo('/about')
+                            // }}
+                            >Featured Project</button></a>
+                        {/* </Link> */}
+                        <span className={styles.borderBottom}></span>
+                    </div>
                 </div>
-
                 <div className={styles.topLeftWrapper}>
                     {/* <span className={styles.email}>sam.ban@gmail.com</span> */}
                     <FiGithub className={`${styles.socialIcons} ${styles.slideInBottom}`} size={'2.3vmin'} />
@@ -61,10 +61,10 @@ function Home({ setRouteTo, rotateBox }) {
                 {/* <img className = {styles.flowerImage6} src="flowerVine7.png" alt="white flowers"></img> */}
 
             </div>
-            <About 
-              scrollPosition = {scrollPosition}
+            <About
+                scrollPosition={scrollPosition}
             />
-            <Projects/>
+            <Projects />
         </>
     )
 }
