@@ -1,0 +1,58 @@
+.projectsRoot {
+    height: 100vh;
+    background-color: var(--primary);
+    border-top: 1px solid var(--dark-slate);
+}
+.aboutHeader {
+    color: var(--fontColor);
+    font-family: var(--font-sans);
+    font-family: var(--font-mono);
+    font-size: calc(8px + 1.1vmin);
+  }
+  .aboutHeaderWrapper {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin-left: 20vw;
+    margin-top: 19.5vh;
+    width: 10%;
+    padding-right: 10px;
+    min-width: fit-content;
+    height: 7%;
+    border-radius: 5%;
+    background-color: var(--dark-navy);
+    background-color: rgb(2, 2, 14);
+  }
+  .numbers {
+    color: var(--electricgreen);
+    margin-right: 8px;
+    font-family: 'Roboto mono', sans-serif;
+  }
+  .aboutHr {
+    margin-top: 27.5vh;
+    width: 65%;
+    border-color: var(--dark-slate);
+  }
+
+  .aboutBackground {
+    background-color: rgb(74, 86, 112, 0.6);
+    position: absolute;
+    height: 40vh;
+    width: 20vmin;
+    width: 40%;
+    min-width: 42vw;
+    margin-left: 29vw;
+    margin-right: 29vw;
+    margin-top: 8vh;
+    border-radius: 2px;
+    box-shadow: 5px 5px var(--dark-slate);
+    transition: border-color 0.25s, box-shadow 0.25s, margin-top 0.25s, margin-left 0.25s;
+  }
+  .aboutBackground:hover {
+    box-shadow: 1px 1px var(--slate);
+    margin-top: 0.79vh;
+    margin-left: 29.2vw;
+    opacity: 0.95;
+  }
