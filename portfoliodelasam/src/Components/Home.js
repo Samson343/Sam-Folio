@@ -30,7 +30,7 @@ function Home({ setRouteTo, rotateBox }) {
                     <span className={styles.borderTop}></span>
                     <p className={styles.textExpand}>hello, my name is,</p>
                     <p className={styles.nameText}>Samuel Banister</p>
-                    <p className={styles.descriptionText}>Builder of websites, doer of things. My cats are my best friends and they annoy the hell out of me</p>
+                    <p className={styles.descriptionText}>Builder of websites, doer of things. My cats are my best friends and they annoy the hell out of me.</p>
                     {/* <Link to='/loading' className={styles.penisLink}> */}
                     <a className = {styles.featuredLink} href="https://hike-seek.onrender.com/" target="blank">
                         <button className={`${styles.button} ${styles.penisLink}`}
@@ -70,7 +70,10 @@ function Home({ setRouteTo, rotateBox }) {
                 </div>
                 <hr className={styles.aboutHr}></hr>
                 <div className={styles.aboutBackground}>
-                    <p className={styles.aboutDescription}>I'm a career changer jumping into tech from a background of dietetics. Since I'm late to the party I know I have to show up bearing gifts to make up for it. That's why I study late into the night, get a handle on the bleeding edge of tech, and pour my heart into everything I create. </p>
+                    
+                    <p className={styles.aboutDescription}>
+                    <h3 className={styles.innerHeader}>I came here to build.</h3>
+                        I'm a career changer jumping into tech from a background of dietetics. Since I'm late to the party I know I have to show up bearing gifts to make up for it. That's why I study late into the night, get a handle on the bleeding edge of tech, and pour my heart into everything I create. </p>
                     <div className={styles.listWrapper}>
                         <ul className={styles.techList}> Frontend
                             <li className={styles.li}>React</li>

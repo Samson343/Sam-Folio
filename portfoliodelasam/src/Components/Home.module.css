@@ -34,8 +34,8 @@
     position: absolute;
     margin-top: 74.5vmin;
     margin-top: 58.5vh;
-    -webkit-animation: rotate-90-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940)  forwards;
-	        animation: rotate-90-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940)  forwards;
+    -webkit-animation: rotate-90-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.1s forwards;
+	        animation: rotate-90-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.1s forwards;
 }
 .bottomLeftAfter {
     border: 2px solid var(--slate);
@@ -79,6 +79,7 @@
     font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
     font-family: var(--font-sans);
     font-size: calc(5.5px + 0.78vmin);
+    margin-top: 2px;
     transition: margin-left 0.2s, background-color 0.4s;
 }
 
@@ -228,6 +229,7 @@
     max-width: 25%;
     color: var(--dark-slate);
     font-family: var(--font-sans);
+    /* font-family: var(--font-mono); */
     font-size: calc(7px + 0.8vmin);
 }
 
@@ -238,6 +240,7 @@
     font-size: calc(7px + 0.8vmin);
     color: var(--light-slate);
     font-family: var(--font-sans);
+    font-family: var(--font-mono);
     -webkit-animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
     animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
 }
@@ -537,10 +540,11 @@ body::-webkit-scrollbar-track-piece {
   }
   .aboutDescription {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     color: var(--fontColor);
     padding: 0% 6% 0% 4%;
     height: 50%;
+    min-height: fit-content;
     font-size: calc(6px + 0.9vmin);
     /* font-family: var(--font-mono); */
     font-family: 'Open Sans', sans-serif;
@@ -548,9 +552,17 @@ body::-webkit-scrollbar-track-piece {
     border-bottom: 1px solid var(--slate);
     border-top: 1px solid var(--dark-slate);
     margin-left: 4%;
-    min-height: fit-content;
     margin-top: 2.5%;
     
+  }
+  .aboutDescription h3 {
+     min-height: fit-content;
+     color: var(--light-slate);
+     font-family: var(--font-mono);
+     min-width: fit-content;
+     min-height: 2.5vh;
+     overflow-y: hidden;
+     margin-bottom: 4%;
   }
   .aboutPicture {
     object-fit: cover;
@@ -573,6 +585,7 @@ body::-webkit-scrollbar-track-piece {
   .aboutHeader {
     color: var(--fontColor);
     font-family: var(--font-sans);
+    font-family: var(--font-mono);
     font-size: calc(8px + 1.2vmin);
   }
   .aboutHeaderWrapper {
@@ -590,6 +603,12 @@ body::-webkit-scrollbar-track-piece {
     border-radius: 5%;
     background-color: var(--dark-navy);
     background-color: rgb(2, 2, 14);
+  }
+  .innerHeader {
+    border-bottom: 1px solid var(--slate);
+    width: 40%;
+    padding-bottom: 2px;
+    min-height: fit-content;
   }
   .numbers {
     color: var(--electricgreen);
