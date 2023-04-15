@@ -58,7 +58,7 @@
 	        animation: rotate-90-cwAfter 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940)  forwards;
 }
 
-.topLeftWrapper {
+.bottomRightWrapper {
     right: 0;
     bottom: 0;
     position: absolute;
@@ -66,6 +66,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-y: hidden;
 }
 
 .flowerImage7 {
@@ -92,7 +93,7 @@
     margin-left: 4px;
 }
 .featuredLink {
-   margin-left: 15%;
+   margin-left: 40%;
 }
 
 .penisLink {
@@ -107,12 +108,12 @@
     border-top: 1px solid var(--dark-slate);
     border-right: 1px solid var(--dark-slate);
     /* margin: 35vh 0 0 50vw */
-    margin-left: 45vmin;
+    margin-left: 22.8%;
     /* margin-bottom: 24vmin; */
     align-self: center;
     /* margin-top: 16.5%; */
     top: 0;
-    margin-top: 0.7vmin
+    /* margin-top: 0.7vmin */
 }
 
 .borderBottom {
@@ -125,10 +126,23 @@
     /* margin: 55vh 0 0 34vw */
     /* margin-top: 24vmin; */
     align-self: center;
-    margin-right: 45vmin;
+    margin-right: 23%;
     /* margin-top: 28.5%; */
     bottom: 0;
-    margin-bottom: 0.7vmin;
+    /* margin-bottom: 0.7vmin; */
+    margin-bottom: 1.15vmin;
+}
+.megaWrapper {
+    position: absolute;
+    margin-top: 33vh;
+    width: 100%;
+    
+    height: 28%;
+    min-height: fit-content;
+    display: flex;
+    justify-content: center;
+    overflow-y: hidden;
+    padding-bottom: 1vmin;
 }
 
 .centerWrapper {
@@ -137,13 +151,29 @@
     align-content: center;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    width: 99%;
+    
+    /* position: absolute; */
+    /* border: 1px solid white; */
+    
+    /* min-width: fit-content; */
+    width: 38%;
+    height: 100%;
+    
     /* margin-top: 17.5%; */
-    height: 32%;
-    margin-top: 30vh;
+    /* height: 32%; */
+    min-height: fit-content;
+    /* margin-top: 12px; */
+    
     /* padding-top: 3.2vmin;
     padding-bottom: 3.2vmin; */
+    transition: box-shadow 0.35s, margin-right 0.35s, margin-top 0.35s;
+}
+.centerWrapper:hover {
+    /* box-shadow: 0px -25px 20px -20px rgba(0,0,0,0.45),
+    -25px 0px 20px -20px rgba(0,0,0,0.45), 5px 5px var(--dark-slate), 5px 5px var(--dark-slate); */
+    box-shadow: 4px 4px 2px 1px white, 4px 4px 2px 1px white;
+    margin-right: 7px;
+    /* margin-bottom: 4px; */
 }
 
 .flowerImage3 {
@@ -216,12 +246,12 @@
     color: var(--fontColor);
     align-self: center;
     margin: 0;
-    margin-bottom: 1.2%;
+    margin-bottom: 1vh;
     font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
     font-family: 'Open Sans', sans-serif;
     /* font-family: 'Proxima Nova', sans-serif;
     font-family: 'Lato', sans-serif; */
-    font-size: calc(12px + 2.8vmin);
+    font-size: calc(9px + 2.8vmin);
     text-shadow: var(--slate) 0.5px 0.5px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -230,17 +260,21 @@
 
 .descriptionText {
     margin-top: 0;
-    max-width: 25%;
+    width: 63%;
     color: var(--dark-slate);
     font-family: var(--font-sans);
     /* font-family: var(--font-mono); */
-    font-size: calc(7px + 0.8vmin);
+    font-size: calc(6.5px + 0.8vmin);
 }
 
 .textExpand {
     align-self: center;
-    margin-bottom: 2vh;
-    margin-right: 40vmin;
+    /* position:absolute; */
+    top:0;
+    max-height: 7%;
+    overflow-y: hidden;
+    margin-right: 20vw;
+    /* margin-right: 35%; */
     font-size: calc(7px + 0.8vmin);
     color: var(--light-slate);
     font-family: var(--font-sans);

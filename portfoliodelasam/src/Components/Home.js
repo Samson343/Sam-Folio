@@ -27,28 +27,34 @@ function Home({ setRouteTo, rotateBox }) {
                     <p className={`${styles.emailLine} ${styles.slideInTop}`}></p>
                     <a href="mailto:sam.ban@gmail.com" className={`${styles.email} ${styles.slideInTop}`}>sam.ban@gmail.com</a>
                 </div>
-
-                <div className={styles.centerWrapper}>
-                    <span className={styles.borderTop}></span>
-                    <p className={styles.textExpand}>hello, my name is,</p>
-                    <p className={styles.nameText}>Samuel Banister</p>
-                    <p className={styles.descriptionText}>Builder of websites, doer of things. My cats are my best friends and they annoy the hell out of me. My wife keeps me tethered to planet earth.</p>
-                    {/* <Link to='/loading' className={styles.penisLink}> */}
-                    <a className = {styles.featuredLink} href="https://hike-seek.onrender.com/" target="blank">
-                        <button className={`${styles.button} ${styles.penisLink}`}
-                        // onClick={() => {
-                        //     setRouteTo('/about')
-                        // }}
-                        >Featured Project</button></a>
-                    {/* </Link> */}
-                    <span className={styles.borderBottom}></span>
+                <div className={styles.megaWrapper}>
+                    <div className={styles.centerWrapper}>
+                        <span className={styles.borderTop}></span>
+                        <p className={styles.textExpand}>hello, my name is,</p>
+                        <p className={styles.nameText}>Samuel Banister</p>
+                        <p className={styles.descriptionText}>Builder of websites, doer of things. My cats are my best friends and they annoy the hell out of me. My wife keeps me tethered to planet earth.</p>
+                        {/* <Link to='/loading' className={styles.penisLink}> */}
+                        <a className={styles.featuredLink} href="https://hike-seek.onrender.com/" target="blank">
+                            <button className={`${styles.button} ${styles.penisLink}`}
+                            // onClick={() => {
+                            //     setRouteTo('/about')
+                            // }}
+                            >Featured Project</button></a>
+                        {/* </Link> */}
+                        <span className={styles.borderBottom}></span>
+                    </div>
                 </div>
-
-                <div className={styles.topLeftWrapper}>
+                <div className={styles.bottomRightWrapper}>
                     {/* <span className={styles.email}>sam.ban@gmail.com</span> */}
-                    <FiGithub className={`${styles.socialIcons} ${styles.slideInBottom}`} size={'2.3vmin'} />
-                    <SiCodewars className={`${styles.socialIcons} ${styles.slideInBottom}`} size={'2vmin'} />
-                    <AiFillLinkedin className={`${styles.socialIcons} ${styles.slideInBottom}`} size={'2.3vmin'} />
+                    <a rel = "noreferrer" href={"https:www.github.com/Samson343"} target="_blank" className={styles.slideInBottom}>
+                    <FiGithub className={`${styles.socialIcons}`} size={'2.3vmin'} />
+                    </a>
+                    <a rel = "noreferrer" href={"https://www.codewars.com/users/Samson12345"} target="_blank" className={styles.slideInBottom}>
+                    <SiCodewars className={`${styles.socialIcons}`} size={'2vmin'} />
+                    </a>
+                    <a rel = "noreferrer" href={"https://www.linkedin.com/in/sam-banister/"} target="_blank" className={styles.slideInBottom}>
+                    <AiFillLinkedin className={`${styles.socialIcons}`} size={'2.3vmin'} />
+                    </a>
 
                     <p className={`${styles.emailLine} ${styles.slideInBottom}`}></p>
                     <img className={styles.flowerImage7} src="flowerVine8.png" alt="white flowers"></img>
@@ -61,10 +67,10 @@ function Home({ setRouteTo, rotateBox }) {
                 {/* <img className = {styles.flowerImage6} src="flowerVine7.png" alt="white flowers"></img> */}
 
             </div>
-            <About 
-              scrollPosition = {scrollPosition}
+            <About
+                scrollPosition={scrollPosition}
             />
-            <Projects/>
+            <Projects />
         </>
     )
 }
