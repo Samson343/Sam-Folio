@@ -44,11 +44,17 @@ function Home({ setRouteTo, rotateBox }) {
                         <span className={styles.borderBottom}></span>
                     </div>
                 </div>
-                <div className={styles.topLeftWrapper}>
+                <div className={styles.bottomRightWrapper}>
                     {/* <span className={styles.email}>sam.ban@gmail.com</span> */}
-                    <FiGithub className={`${styles.socialIcons} ${styles.slideInBottom}`} size={'2.3vmin'} />
-                    <SiCodewars className={`${styles.socialIcons} ${styles.slideInBottom}`} size={'2vmin'} />
-                    <AiFillLinkedin className={`${styles.socialIcons} ${styles.slideInBottom}`} size={'2.3vmin'} />
+                    <a rel = "noreferrer" href={"https:www.github.com/Samson343"} target="_blank" className={styles.slideInBottom}>
+                    <FiGithub className={`${styles.socialIcons}`} size={'2.3vmin'} />
+                    </a>
+                    <a rel = "noreferrer" href={"https://www.codewars.com/users/Samson12345"} target="_blank" className={styles.slideInBottom}>
+                    <SiCodewars className={`${styles.socialIcons}`} size={'2vmin'} />
+                    </a>
+                    <a rel = "noreferrer" href={"https://www.linkedin.com/in/sam-banister/"} target="_blank" className={styles.slideInBottom}>
+                    <AiFillLinkedin className={`${styles.socialIcons}`} size={'2.3vmin'} />
+                    </a>
 
                     <p className={`${styles.emailLine} ${styles.slideInBottom}`}></p>
                     <img className={styles.flowerImage7} src="flowerVine8.png" alt="white flowers"></img>

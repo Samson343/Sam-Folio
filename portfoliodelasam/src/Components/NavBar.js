@@ -39,7 +39,7 @@ function NavBar ({ rotateBox, setRotateBox }) {
             </div>
             <div className={styles.linkWrapper}>
                 <span className={styles.numbers}>.04</span>
-                <span className={styles.navLink}>Resume</span>
+                <a href = "../../Sam-Banister-FullStack-Resume.pdf" target = "_blank" className={styles.navLinkResume}>Resume</a>
             </div>
             {/* <button className={styles.button}>Resume</button> */}
         </nav>

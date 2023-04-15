@@ -58,7 +58,7 @@
 	        animation: rotate-90-cwAfter 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940)  forwards;
 }
 
-.topLeftWrapper {
+.bottomRightWrapper {
     right: 0;
     bottom: 0;
     position: absolute;
@@ -66,6 +66,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-y: hidden;
 }
 
 .flowerImage7 {
@@ -107,7 +108,7 @@
     border-top: 1px solid var(--dark-slate);
     border-right: 1px solid var(--dark-slate);
     /* margin: 35vh 0 0 50vw */
-    margin-left: 43vmin;
+    margin-left: 25%;
     /* margin-bottom: 24vmin; */
     align-self: center;
     /* margin-top: 16.5%; */
@@ -125,21 +126,22 @@
     /* margin: 55vh 0 0 34vw */
     /* margin-top: 24vmin; */
     align-self: center;
-    margin-right: 43vmin;
+    margin-right: 25%;
     /* margin-top: 28.5%; */
     bottom: 0;
     /* margin-bottom: 0.7vmin; */
-    margin-bottom: 1vmin;
+    margin-bottom: 0.95vmin;
 }
 .megaWrapper {
     position: absolute;
-    margin-top: 35vh;
+    margin-top: 33vh;
     width: 100%;
     
     height: 28%;
     min-height: fit-content;
     display: flex;
     justify-content: center;
+    overflow-y: hidden;
     padding-bottom: 1vmin;
 }
 
@@ -154,20 +156,24 @@
     /* border: 1px solid white; */
     
     /* min-width: fit-content; */
-    width: 37.8%;
+    width: 40%;
     height: 100%;
     
     /* margin-top: 17.5%; */
     /* height: 32%; */
     min-height: fit-content;
+    /* margin-top: 12px; */
     
     /* padding-top: 3.2vmin;
     padding-bottom: 3.2vmin; */
+    transition: box-shadow 0.35s, margin-right 0.35s, margin-top 0.35s;
 }
 .centerWrapper:hover {
-    box-shadow: 5px 5px var(--dark-slate);
-    margin-left: 0.5vmin;
-    margin-top: 0.2vmin;
+    box-shadow: 0px -25px 20px -20px rgba(0,0,0,0.45),
+    -25px 0px 20px -20px rgba(0,0,0,0.45), 5px 5px var(--dark-slate), 5px 5px var(--dark-slate);
+    box-shadow: 4px 4px var(--dark-slate), 4px 4px var(--dark-slate);;
+    margin-right: 5px;
+    margin-top: 0;
 }
 
 .flowerImage3 {
@@ -263,8 +269,11 @@
 
 .textExpand {
     align-self: center;
-    margin-bottom: 1.5vh;
-    margin-right: 18vw;
+    /* position:absolute; */
+    top:0;
+    max-height: 7%;
+    overflow-y: hidden;
+    margin-right: 20vw;
     /* margin-right: 35%; */
     font-size: calc(7px + 0.8vmin);
     color: var(--light-slate);
