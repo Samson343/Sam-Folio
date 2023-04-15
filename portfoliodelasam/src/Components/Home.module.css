@@ -108,7 +108,7 @@
     border-top: 1px solid var(--dark-slate);
     border-right: 1px solid var(--dark-slate);
     /* margin: 35vh 0 0 50vw */
-    margin-left: 25%;
+    margin-left: 23.8%;
     /* margin-bottom: 24vmin; */
     align-self: center;
     /* margin-top: 16.5%; */
@@ -126,11 +126,11 @@
     /* margin: 55vh 0 0 34vw */
     /* margin-top: 24vmin; */
     align-self: center;
-    margin-right: 25%;
+    margin-right: 24%;
     /* margin-top: 28.5%; */
     bottom: 0;
     /* margin-bottom: 0.7vmin; */
-    margin-bottom: 0.95vmin;
+    margin-bottom: 1.15vmin;
 }
 .megaWrapper {
     position: absolute;
@@ -156,7 +156,7 @@
     /* border: 1px solid white; */
     
     /* min-width: fit-content; */
-    width: 40%;
+    width: 39%;
     height: 100%;
     
     /* margin-top: 17.5%; */
@@ -169,11 +169,11 @@
     transition: box-shadow 0.35s, margin-right 0.35s, margin-top 0.35s;
 }
 .centerWrapper:hover {
-    box-shadow: 0px -25px 20px -20px rgba(0,0,0,0.45),
-    -25px 0px 20px -20px rgba(0,0,0,0.45), 5px 5px var(--dark-slate), 5px 5px var(--dark-slate);
-    box-shadow: 4px 4px var(--dark-slate), 4px 4px var(--dark-slate);;
-    margin-right: 5px;
-    margin-top: 0;
+    /* box-shadow: 0px -25px 20px -20px rgba(0,0,0,0.45),
+    -25px 0px 20px -20px rgba(0,0,0,0.45), 5px 5px var(--dark-slate), 5px 5px var(--dark-slate); */
+    box-shadow: 4px 4px 2px 1px white, 4px 4px 2px 1px white;
+    margin-right: 7px;
+    /* margin-bottom: 4px; */
 }
 
 .flowerImage3 {
