@@ -33,7 +33,7 @@
     text-decoration: none;
     transition: color 0.25s, margin-right 0.25s;
 }
-.navLink:hover {
+.navLink:hover, .navLinkResume:hover {
     color: white;
     margin-right:2px
 }

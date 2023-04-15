@@ -166,12 +166,12 @@
     
     /* padding-top: 3.2vmin;
     padding-bottom: 3.2vmin; */
-    transition: box-shadow 0.35s, margin-right 0.35s, margin-top 0.35s;
+    transition: box-shadow 0.45s, margin-right 0.45s, margin-top 0.45s;
 }
 .centerWrapper:hover {
     /* box-shadow: 0px -25px 20px -20px rgba(0,0,0,0.45),
     -25px 0px 20px -20px rgba(0,0,0,0.45), 5px 5px var(--dark-slate), 5px 5px var(--dark-slate); */
-    box-shadow: 4px 4px 2px 1px white, 4px 4px 2px 1px white;
+    box-shadow: 4px 3px 2px 1px white, 4px 3px 2px 1px white;
     margin-right: 7px;
     /* margin-bottom: 4px; */
 }
