@@ -1,15 +1,26 @@
 .projectsRoot {
-    height: 100vh;
+    height: 300vh;
     background-color: var(--primary);
     border-top: 1px solid var(--dark-slate);
 }
-.aboutHeader {
+.projectWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 10%;
+  height: 80%;
+  border: 1px solid var(--dark-slate);
+  align-items: center;
+  margin-top: 5vh;
+}
+.projectHeader {
     color: var(--fontColor);
     font-family: var(--font-sans);
     font-family: var(--font-mono);
     font-size: calc(8px + 1.1vmin);
+    
   }
-  .aboutHeaderWrapper {
+  .projectHeaderWrapper {
     position: absolute;
     display: flex;
     align-items: center;
@@ -30,15 +41,15 @@
     margin-right: 8px;
     font-family: 'Roboto mono', sans-serif;
   }
-  .aboutHr {
+  .projectHr {
     margin-top: 27.5vh;
     width: 65%;
     border-color: var(--dark-slate);
   }
 
-  .aboutBackground {
+  .projectBackground {
     background-color: rgb(74, 86, 112, 0.6);
-    position: absolute;
+    /* position: absolute; */
     height: 40vh;
     width: 20vmin;
     width: 40%;
@@ -50,9 +61,31 @@
     box-shadow: 5px 5px var(--dark-slate);
     transition: border-color 0.25s, box-shadow 0.25s, margin-top 0.25s, margin-left 0.25s;
   }
-  .aboutBackground:hover {
+  .projectBackground:hover {
     box-shadow: 1px 1px var(--slate);
-    margin-top: 0.79vh;
-    margin-left: 29.2vw;
+    margin-top: 8.5vh;
+    margin-left: 30vw;
     opacity: 0.95;
+  }
+  .project1Wrapper {
+      /* border: 1px solid var(--dark-slate); */
+  }
+  .title {
+    margin-top: 5vmin;
+    position: absolute;
+    padding: 1vmin;
+    background-color: var(--lightest-slate);
+    margin-left: 24%;
+    left:0;
+    font-family: var(--font-mono);
+    /* box-shadow: 1px 1px 1px 1px rgb(108, 108, 108); */
+  }
+  .titleRight {
+    position: absolute;
+    right: 0;
+    margin-right: 24%;
+    margin-top: 5vmin;
+    padding: 1vmin;
+    background-color: var(--lightest-slate);
+    font-family: var(--font-mono);
   }

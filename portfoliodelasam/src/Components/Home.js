@@ -22,6 +22,10 @@ function Home({ setRouteTo, rotateBox }) {
     return (
         <>
             <div className={styles.homeRoot}>
+
+            
+
+
                 <div className={`${styles.emailWrapper}`}>
                     <img className={styles.flowerImage8} src="flowerVine5.png" alt="white flowers"></img>
                     <p className={`${styles.emailLine} ${styles.slideInTop}`}></p>
@@ -65,6 +69,99 @@ function Home({ setRouteTo, rotateBox }) {
             <img className = {styles.flowerImage4} src="flowerVine4.png" alt="white flowers"></img>
             <img className = {styles.flowerImage5} src="flowerVine6.png" alt="white flowers"></img> */}
                 {/* <img className = {styles.flowerImage6} src="flowerVine7.png" alt="white flowers"></img> */}
+                <div className={styles.snowflakes} aria-hidden="true">
+    
+  <div className={styles.snowflake}>
+  .
+  </div>
+  <div className={styles.snowflake}>
+  .
+  </div>
+  <div className={styles.snowflake}>
+  </div>
+  <div className={styles.snowflake}>
+  .
+  </div>
+  <div className={styles.snowflake}>
+  .
+  </div>
+  <div className={styles.snowflake}>
+  .
+  </div>
+  {/* <div className={styles.snowflake}>
+  </div> */}
+  {/* <div className={styles.snowflake}>
+  .
+  </div> */}
+  <div className={styles.snowflake}>
+    .
+  </div>
+  <div className={styles.snowflake}>
+    .
+  </div>
+  {/* <div className={styles.snowflake}>
+    .
+  </div>
+  <div className={styles.snowflake}>
+    .
+  </div> */}
+  {/* <div className={styles.snowflake}>
+    .
+  </div>
+  <div className={styles.snowflake}>
+    .
+  </div><div className={styles.snowflake}>
+    .
+  </div>
+  <div className={styles.snowflake}>
+    .
+  </div><div className={styles.snowflake}>
+    .
+  </div>
+  <div className={styles.snowflake}>
+    .
+  </div><div className={styles.snowflake}>
+    .
+  </div>
+  <div className={styles.snowflake}>
+    .
+  </div><div className={styles.snowflake}>
+    .
+  </div>
+  <div className={styles.snowflake}>
+    .
+  </div><div className={styles.snowflake}>
+    .
+  </div>
+  <div className={styles.snowflake}>
+    .
+  </div><div className={styles.snowflake}>
+    .
+  </div>
+  <div className={styles.snowflake}>
+    .
+  </div><div className={styles.snowflake}>
+    .
+  </div>
+  <div className={styles.snowflake}>
+    .
+  </div><div className={styles.snowflake}>
+    .
+  </div>
+  <div className={styles.snowflake}>
+    .
+  </div><div className={styles.snowflake}>
+    .
+  </div>
+  <div className={styles.snowflake}>
+    .
+  </div><div className={styles.snowflake}>
+    .
+  </div>
+  <div className={styles.snowflake}>
+    .
+  </div> */}
+</div>
 
             </div>
             <About
