@@ -22,7 +22,7 @@ function Projects() {
                        <div className={styles.title}>Hike + Seek Outfitters</div>
                         <p className={styles.projectDescription}></p>
 
-                        <div className={styles.aboutPictureBackground}></div>
+                        <div className={styles.pictureBackground}></div>
 
                     </div>
                 </div>
@@ -32,7 +32,7 @@ function Projects() {
                     <div className={styles.titleRight}>Connected - Browser Game</div>
                         <p className={styles.projectDescription}></p>
 
-                        <div className={styles.aboutPictureBackground}></div>
+                        <div className={styles.pictureBackground}></div>
 
                     </div>
                 </div>
@@ -43,7 +43,7 @@ function Projects() {
 
                         <p className={styles.projectDescription}></p>
 
-                        <div className={styles.aboutPictureBackground}></div>
+                        <div className={styles.pictureBackground}></div>
 
                     </div>
                 </div>

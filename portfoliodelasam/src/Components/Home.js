@@ -36,7 +36,7 @@ function Home({ setRouteTo, rotateBox }) {
                         <span className={styles.borderTop}></span>
                         <p className={styles.textExpand}>hello, my name is,</p>
                         <p className={styles.nameText}>Samuel Banister</p>
-                        <p className={styles.descriptionText}>Builder of websites, doer of things. My cats are my best friends and they annoy the hell out of me. My wife keeps me tethered to planet earth.</p>
+                        <p className={styles.descriptionText}>I use code to build beautiful things. My cats are my best friends and they annoy the hell out of me. My wife keeps me tethered to planet earth.</p>
                         {/* <Link to='/loading' className={styles.penisLink}> */}
                         <a className={styles.featuredLink} href="https://hike-seek.onrender.com/" target="blank">
                             <button className={`${styles.button} ${styles.penisLink}`}
