@@ -62,6 +62,8 @@
     box-shadow: 5px 5px var(--dark-slate);
     margin-bottom: 5px;
     transition: border-color 0.25s, box-shadow 0.25s, margin-top 0.25s, margin-left 0.25s;
+    display: flex;
+    flex-direction: column;
   }
 
   .projectBackground:hover {
@@ -100,5 +102,31 @@
     width: 20%;
     right: 0;
     margin-right: 20%;
+    margin-top: 3vmin;
     position: absolute;
+  }
+  .pictureBackground2 {
+    background-color: rgba(92, 103, 126, 0.6);
+    /* position: absolute; */
+    height: 35vh;
+    width: 20vmin;
+    width: 20%;
+    left: 0;
+    margin-left: 20%;
+    margin-top: 3vmin;
+    position: absolute;
+  }
+  .projectDescription {
+    margin-left: 10%;
+    margin-top: 14vh;
+    width: 55%;
+    font-family: 'Open Sans';
+    color: var(--slate);
+  }
+  .projectDescription2 {
+    margin-left: 35%;
+    margin-top: 14vh;
+    width: 55%;
+    font-family: 'Open Sans';
+    color: var(--slate);
   }

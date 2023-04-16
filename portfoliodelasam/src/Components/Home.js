@@ -3,6 +3,7 @@ import styles from './Home.module.css'
 import { Link } from "react-router-dom";
 import { FiGithub } from 'react-icons/fi'
 import { AiFillLinkedin } from 'react-icons/ai'
+
 import { SiCodewars } from 'react-icons/si'
 import About from "./About";
 import Projects from "./Projects";
