@@ -2,6 +2,7 @@
     height: 240vh;
     background-color: var(--primary);
     border-top: 1px solid var(--dark-slate);
+    min-height: fit-content;
 }
 .projectWrapper {
   display: flex;
@@ -13,12 +14,14 @@
   border: 1px solid var(--dark-slate);
   align-items: center;
   margin-top: 5vh;
+  padding-bottom: 8vh;
 }
 .projectHeader {
     color: var(--fontColor);
     font-family: var(--font-sans);
     font-family: var(--font-mono);
-    font-size: calc(8px + 1.1vmin);
+    color: var(--slate);
+  font-size: calc(8px + 1.1vmin);
     
   }
   .projectHeaderWrapper {
@@ -39,7 +42,7 @@
   }
   .numbers {
     color: var(--electricgreen);
-    margin-right: 8px;
+    margin-right: 10px;
     font-family: 'Roboto mono', sans-serif;
   }
   .projectHr {
@@ -53,10 +56,11 @@
     /* position: absolute; */
     height: 45vh;
     width: 20vmin;
-    width: 40%;
-    min-width: 42vw;
-    margin-left: 29vw;
-    margin-right: 29vw;
+    width: 60%;
+    /* min-width: 50vw; */
+    /* margin-left: 29vw; */
+    /* margin-right: 29vw; */
+    margin-left: 20%;
     margin-top: 8vh;
     border-radius: 2px;
     box-shadow: 5px 5px var(--dark-slate);
@@ -64,12 +68,14 @@
     transition: border-color 0.25s, box-shadow 0.25s, margin-top 0.25s, margin-left 0.25s;
     display: flex;
     flex-direction: column;
+    min-height: fit-content;
+    
   }
 
   .projectBackground:hover {
     box-shadow: 1px 1px var(--slate);
-    margin-top: 8.5vh;
-    margin-left: 30vw;
+    margin-top: 8vh;
+    margin-left: 20.5%;
     opacity: 0.95;
   }
   .project1Wrapper {
@@ -80,7 +86,7 @@
     position: absolute;
     padding: 1vmin;
     background-color: var(--lightest-slate);
-    margin-left: 24%;
+    margin-left: 22%;
     left:0;
     font-family: var(--font-mono);
     /* box-shadow: 1px 1px 1px 1px rgb(108, 108, 108); */
@@ -88,7 +94,7 @@
   .titleRight {
     position: absolute;
     right: 0;
-    margin-right: 24%;
+    margin-right: 22%;
     margin-top: 5vmin;
     padding: 1vmin;
     background-color: var(--lightest-slate);
@@ -118,15 +124,43 @@
   }
   .projectDescription {
     margin-left: 10%;
-    margin-top: 14vh;
+    margin-top: 12vh;
     width: 55%;
     font-family: 'Open Sans';
     color: var(--slate);
+    min-height: fit-content;
+    font-size: calc(5px + 1.05vmin);
   }
   .projectDescription2 {
     margin-left: 35%;
-    margin-top: 14vh;
+    margin-top: 12vh;
     width: 55%;
     font-family: 'Open Sans';
     color: var(--slate);
+    font-size: calc(5px + 1.05vmin);
+  }
+  .techIcons {
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+    margin-left: 10%;
+    width: calc(100px + 20vmin);
+    margin-top: 2%;
+    border-top: 1px solid var(--dark-slate);
+  }
+  .techIcons2 {
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    margin-left: 35%;
+    
+    width: calc(80px + 10vmin);
+    margin-top: 2%;
+    border-top: 1px solid var(--dark-slate);
+  }
+  .techIcon {
+    color: var(--slate);
+    width: 100px;
+    height: calc(20px + 0.75vmin);
+    padding-top: 5px;
   }

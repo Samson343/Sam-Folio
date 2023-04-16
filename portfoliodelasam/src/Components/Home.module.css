@@ -254,7 +254,7 @@
 
 .nameText {
     color: var(--fontColor);
-    color: var(--lightest-slate);
+    color: var(--light-slate);
     align-self: center;
     margin: 0;
     margin-bottom: 1vh;
@@ -265,7 +265,7 @@
     /* font-family: 'Proxima Nova', sans-serif;
     font-family: 'Lato', sans-serif; */
     font-size: calc(9px + 2.8vmin);
-    text-shadow: var(--slate) 0.5px 0.5px;
+    /* text-shadow:  0.5px 0.5px 0.5px var(--electricgreen); */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-weight: 600;
