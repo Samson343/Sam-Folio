@@ -40,6 +40,7 @@ function App() {
             <Home
               setRouteTo={ setRouteTo }
               rotateBox={ rotateBox }
+              setRotateBox={ setRotateBox }
             />
           </>
           } 

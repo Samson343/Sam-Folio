@@ -40,8 +40,8 @@
     position: absolute;
     margin-top: 74.6vmin;
     margin-top: 58.67vh;
-    -webkit-animation: rotate-90-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.1s forwards;
-    animation: rotate-90-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.1s forwards;
+    -webkit-animation: rotate-90-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940)  forwards;
+    animation: rotate-90-cw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940)  forwards;
 }
 
 .bottomLeftAfter {
@@ -503,8 +503,8 @@ body::-webkit-scrollbar-track-piece {
 
 @-webkit-keyframes rotate-90-cw {
     0% {
-        -webkit-transform: rotate(0);
-        transform: rotate(0);
+        -webkit-transform: rotate(135deg);
+        transform: rotate(135deg);
     }
 
     100% {
@@ -515,8 +515,8 @@ body::-webkit-scrollbar-track-piece {
 
 @keyframes rotate-90-cw {
     0% {
-        -webkit-transform: rotate(0);
-        transform: rotate(0);
+        -webkit-transform: rotate(135deg);
+        transform: rotate(135deg);
     }
 
     100% {

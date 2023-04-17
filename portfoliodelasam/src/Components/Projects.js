@@ -38,7 +38,9 @@ function Projects() {
                                
                             </div>
 
-                        <div className={styles.pictureBackground}></div>
+                        <div className={styles.pictureBackground}>
+                            <img className={styles.screenshot} src="hike&seekScreenshot.png" alt = 'Hike and Seek'></img>
+                        </div>
 
                     </div>
                 </div>
@@ -46,7 +48,7 @@ function Projects() {
                 <div className={styles.project1Wrapper}>
                     <div className={styles.projectBackground}>
                         <div className={styles.titleRight}>Connected - Browser Game</div>
-                        <span className={styles.projectDescription2}>An enjoyable browser game built from the ground up. Features a fully functional, home-grown, AI opponent that capitalizes on winning setups and blocks your attempts to win. The goal was to demo my Javascript skills through a simple game with a relatively complex logical framework as it relates to the DOM. Please feel free and hop on and play a game against that insidious AI!</span>
+                        <span className={styles.projectDescription2}>An enjoyable browser game built from the ground up. Features a fully functional, home-grown, AI opponent that capitalizes on winning setups and blocks your attempts to win. The goal was to demo my Javascript skills through a simple game with a relatively complex logical framework as it relates to the DOM. Please feel free and hop on and play a game against that insidious AI! Side note - I built this early in my journey which means it's unfortunately not mobile friendly - enjoy this one on your desktop or laptop!</span>
 
                         <div className={styles.techIcons2}>
                                <DiJavascript1 className={styles.techIcon}/>
@@ -55,7 +57,10 @@ function Projects() {
 
                             </div>
 
-                        <div className={styles.pictureBackground2}></div>
+                        <div className={styles.pictureBackground2}>
+                        <img className={styles.screenshot} src="connectedScreenshot.PNG" alt = 'Connected'></img>
+                        
+                        </div>
 
                     </div>
                 </div>

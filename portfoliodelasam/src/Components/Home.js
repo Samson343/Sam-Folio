@@ -9,7 +9,7 @@ import About from "./About";
 import Projects from "./Projects";
 
 
-function Home({ setRouteTo, rotateBox }) {
+function Home({ setRouteTo, rotateBox, setRotateBox }) {
     const [scrollPosition, setScrollPosition] = useState(window.scrollY);
 
     useEffect(() => {
@@ -18,7 +18,17 @@ function Home({ setRouteTo, rotateBox }) {
         }
         window.addEventListener('scroll', handleScroll);
         // return () => window.removeEventListener('scroll', handleScroll);
+    
     }, []);
+    useEffect (() => {
+        if (scrollPosition > 700) {
+            setRotateBox(true)
+        }
+        if(scrollPosition < 700) {
+            setRotateBox(false)
+        }
+
+    }, [scrollPosition])
 
     return (
         <>
