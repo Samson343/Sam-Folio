@@ -1,7 +1,8 @@
 import React from "react";
 import styles from './Projects.module.css'
-import { DiPostgresql, DiReact, DiNodejsSmall, DiNodejs, DiBootstrap, DiJavascript1, DiAndroid, DiCss3, DiHtml5, DiJavascript,   } from 'react-icons/di'
+import { DiPostgresql, DiReact, DiNodejsSmall, DiNodejs, DiBootstrap, DiJavascript1, DiAndroid, DiCss3, DiHtml5, DiJavascript, } from 'react-icons/di'
 import { SiExpress } from "react-icons/si";
+import { Link } from "react-router-dom";
 
 function Projects() {
     return (
@@ -26,20 +27,22 @@ function Projects() {
 
                             Features a dynamic cart and account system which allows users to pick up where they left off on different devices, experience a simulated checkout, and track their order history. An admin interface was created for inventory management- such as adding or removing products- in addition to warehouse stock tracking which is stored and persisted for every available product ensuring that orders cannot be created unless they can be fulfilled.</span>
 
-                            <div className={styles.techIcons}>
-                               <DiReact className={styles.techIcon}/>
-                               
-                               <SiExpress className={styles.techIcon}/>
-                               <DiNodejsSmall className={styles.techIcon}/>
-                               <DiPostgresql className={styles.techIcon}/>
-                               <DiBootstrap className={styles.techIcon}/>
-                               <DiCss3 className={styles.techIcon}/>
-                               <DiHtml5 className={styles.techIcon}/>
-                               
-                            </div>
+                        <div className={styles.techIcons}>
+                            <DiReact className={styles.techIcon} />
+
+                            <SiExpress className={styles.techIcon} />
+                            <DiNodejsSmall className={styles.techIcon} />
+                            <DiPostgresql className={styles.techIcon} />
+                            <DiBootstrap className={styles.techIcon} />
+                            <DiCss3 className={styles.techIcon} />
+                            <DiHtml5 className={styles.techIcon} />
+
+                        </div>
 
                         <div className={styles.pictureBackground}>
-                            <img className={styles.screenshot} src="hike&seekScreenshot.png" alt = 'Hike and Seek'></img>
+                          <a className={styles.Link} href="https://super-valkyrie-a29964.netlify.app/" target="_blank" rel="noreferrer">
+                            <img className={styles.screenshot} src="hike&seekScreenshot.png" alt='Hike and Seek'></img>
+                          </a>
                         </div>
 
                     </div>
@@ -51,15 +54,16 @@ function Projects() {
                         <span className={styles.projectDescription2}>An enjoyable browser game built from the ground up. Features a fully functional, home-grown, AI opponent that capitalizes on winning setups and blocks your attempts to win. The goal was to demo my Javascript skills through a simple game with a relatively complex logical framework as it relates to the DOM. Please feel free and hop on and play a game against that insidious AI! Side note - I built this early in my journey which means it's unfortunately not mobile friendly - enjoy this one on your desktop or laptop!</span>
 
                         <div className={styles.techIcons2}>
-                               <DiJavascript1 className={styles.techIcon}/>
-                               <DiCss3 className={styles.techIcon}/>
-                               <DiHtml5 className={styles.techIcon}/>
+                            <DiJavascript1 className={styles.techIcon} />
+                            <DiCss3 className={styles.techIcon} />
+                            <DiHtml5 className={styles.techIcon} />
 
-                            </div>
+                        </div>
 
                         <div className={styles.pictureBackground2}>
-                        <img className={styles.screenshot} src="connectedScreenshot.PNG" alt = 'Connected'></img>
-                        
+                          <a className={styles.Link} href="https://super-valkyrie-a29964.netlify.app/" target="_blank" rel="noreferrer">
+                            <img className={styles.screenshot} src="connectedScreenshot.PNG" alt='Connected'></img>
+                          </a>
                         </div>
 
                     </div>
@@ -75,18 +79,20 @@ function Projects() {
                             messages to other users on the platform.
                             ● Designed and implemented a user-friendly UI with all CSS written from scratch </span>
 
-                            <div className={styles.techIcons}>
-                               <DiReact className={styles.techIcon}/>
-                               <SiExpress className={styles.techIcon}/>
-                               <DiNodejsSmall className={styles.techIcon}/>
-                               <DiPostgresql className={styles.techIcon}/>
-                               <DiCss3 className={styles.techIcon}/>
-                               <DiHtml5 className={styles.techIcon}/>
+                        <div className={styles.techIcons}>
+                            <DiReact className={styles.techIcon} />
+                            <SiExpress className={styles.techIcon} />
+                            <DiNodejsSmall className={styles.techIcon} />
+                            <DiPostgresql className={styles.techIcon} />
+                            <DiCss3 className={styles.techIcon} />
+                            <DiHtml5 className={styles.techIcon} />
 
-                            </div>
+                        </div>
 
                         <div className={styles.pictureBackground}>
-                        <img className={styles.screenshot} src="strangersThingsScreenshot4.PNG" alt = 'Connected'></img>
+                            <a className={styles.Link}  href ="https://super-semolina-b1e7cc.netlify.app/" target="_blank" rel="noreferrer">
+                                <img className={styles.screenshot} src="strangersThingsScreenshot4.PNG" alt='Connected'></img>
+                            </a>
                         </div>
 
                     </div>

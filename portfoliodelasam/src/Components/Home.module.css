@@ -95,7 +95,8 @@
 }
 
 .button:hover {
-    background-color: var(--electricpurple);
+    background-color: var(--electricblue);
+    
     margin-left: 4px;
 }
 

@@ -4,14 +4,17 @@
 
 }
 .relative {
- 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  min-height: fit-content;
 }
 .aboutBackground {
   background-color: rgb(74, 86, 112, 0.6);
   position: absolute;
   height: 40vh;
-  width: 20vmin;
-  width: 40%;
+  /* width: 20vmin; */
+  width: 45%;
   /* min-width: 600px; */
   margin-left: 29vw;
   margin-right: 29vw;
@@ -19,6 +22,7 @@
   border-radius: 2px;
   box-shadow: 3.5px 3.5px var(--dark-slate);
   transition: border-color 0.25s, box-shadow 0.25s, margin-top 0.25s, margin-left 0.25s;
+  min-height: fit-content;
 }
 .aboutBackground:hover {
   box-shadow: 1px 1px var(--dark-slate);
@@ -52,6 +56,7 @@
   padding: 3% 20% 0% 8%;
   height: 40%;
   min-height: 15vh;
+  min-height: fit-content;
   border-left: 1px solid var(--slate);
   border-bottom: 1px solid var(--slate);
   border-top: 1px solid var(--dark-slate);
@@ -61,24 +66,27 @@
 .interests {
   width: 40%;
   height:2.5vmin;
+  overflow-y: hidden;
+  min-height: fit-content;
+  
   min-width: fit-content;
   display: flex;
   padding-top: 1%;
   padding-right: 5%;
   padding-bottom: 2px;
-  min-height: fit-content;
   justify-content: space-around;
   border-bottom: 1px solid var(--dark-slate);
 }
 .interestIcons {
-  height: 2vmin;
-  width: 2vmin;
+  height: 85%;
+  /* width: 2vmin; */
 }
 .interests span {
   margin-right: 10px;
   margin-bottom: 2px;
   font: var(--font-mono);
   font-size: calc(6px + 0.9vmin);
+  height: 120%;
 }
 /* .aboutDescription h3 {
    min-height: fit-content;
@@ -96,21 +104,18 @@
   min-width: calc(60px + 6.5vmax);
   position: absolute;
   /* margin-left: 64vw; */
-  margin-left: 22%;
-  right: 0;
-  margin-right: 25%;
-  margin-top: 24.5vh;
+  margin-left: 43%;
+  /* right: 0; */
+  margin-top: 26.5vh;
   border-radius: 3.5px;
   opacity: 0.97;
   box-shadow: 3px 3px var(--dark-slate);
-  transition: border-color 0.25s, box-shadow 0.25s, margin-top 0.25s, margin-right 0.25s;
+  transition: border-color 0.25s, box-shadow 0.25s, margin-top 0.25s, margin-left 0.25s;
 }
 .aboutPicture:hover {
   box-shadow: 1px 1px var(--dark-slate);
-  margin-top: 17.7vh;
-  margin-left: 64.2vw;
-  margin-top: 24.7vh;
-  margin-right: 24.8%;
+  margin-left: 43.3%;
+  margin-top: 26.9vh;
 }
 .aboutHeader {
   color: var(--fontColor);
@@ -130,6 +135,7 @@
   width: 10%;
   padding-right: 10px;
   min-width: fit-content;
+  overflow-y: hidden;
   height: 7%;
   border-radius: 5%;
   background-color: var(--dark-navy);
@@ -183,14 +189,14 @@
   margin-top: 7vmin;
   position: absolute;
   padding: 1vmin;
-  margin-left: 21.5%;
+  margin-right: 46%;
   /* right:0;
   margin-right: 22%; */
   z-index: 1;
   background-color: var(--lightest-slate);
   /* left:0; */
   font-family: var(--font-mono);
-  font-size: calc(8px + 0.83vmin);
+  font-size: calc(7px + 0.93vmin);
   /* box-shadow: 1px 1px 1px 1px rgb(108, 108, 108); */
 }
 .aboutHr {
@@ -242,12 +248,46 @@
 
   @media only screen and ( max-width: 600px)  {
     .flowerImage2 {
-      /* display: none; */
-      position:unset;
-      /* -webkit-animation: none;
-          animation: none; */
-
+      display: none;
+      -webkit-animation: none;
+          animation: none;
     }
+    .aboutBackground {
+      width: 80%;
+      padding-top: 8%;
+      height: 45%;
+    }
+    .techList {
+      margin-top: 10%;
+    }
+    .aboutPicture {
+      margin-top: 45vh;
+      margin-left: 55%;
+    }
+    .title {
+      margin-top: 13.5vmin;
+      margin-right: 40%;
+      font-size: calc(8px + 1.4vmin);
+    }
+    .interests {
+      height: fit-content;
+      overflow-y: hidden;
+    }
+    .interestIcons {
+      margin-left: 5px;
+    }
+    .aboutHeaderWrapper {
+      margin-left: 10vw;
+      padding-left: 10px;
+      height:5.5%;
+      margin-top: 21.2vh; 
+      overflow-y: hidden;
+    }
+    .aboutHr {
+      width: 80%;
+    }
+    
+
   
     }
   
