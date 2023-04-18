@@ -12,7 +12,7 @@
   height: 40vh;
   width: 20vmin;
   width: 40%;
-  min-width: 600px;
+  /* min-width: 600px; */
   margin-left: 29vw;
   margin-right: 29vw;
   margin-top: 5vh;
@@ -103,14 +103,14 @@
   border-radius: 3.5px;
   opacity: 0.97;
   box-shadow: 3px 3px var(--dark-slate);
-  transition: border-color 0.25s, box-shadow 0.25s, margin-top 0.25s, margin-left 0.25s;
+  transition: border-color 0.25s, box-shadow 0.25s, margin-top 0.25s, margin-right 0.25s;
 }
 .aboutPicture:hover {
   box-shadow: 1px 1px var(--dark-slate);
   margin-top: 17.7vh;
   margin-left: 64.2vw;
   margin-top: 24.7vh;
-  margin-left: 22.3%;
+  margin-right: 24.8%;
 }
 .aboutHeader {
   color: var(--fontColor);
@@ -237,4 +237,18 @@
       opacity: 1;
     }
   }
+
+
+
+  @media only screen and ( max-width: 600px)  {
+    .flowerImage2 {
+      /* display: none; */
+      position:unset;
+      /* -webkit-animation: none;
+          animation: none; */
+
+    }
+  
+    }
+  
  

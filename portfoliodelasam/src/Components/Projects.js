@@ -85,7 +85,9 @@ function Projects() {
 
                             </div>
 
-                        <div className={styles.pictureBackground}></div>
+                        <div className={styles.pictureBackground}>
+                        <img className={styles.screenshot} src="strangersThingsScreenshot4.PNG" alt = 'Connected'></img>
+                        </div>
 
                     </div>
                 </div>

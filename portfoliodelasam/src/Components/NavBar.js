@@ -35,7 +35,7 @@ function NavBar ({ rotateBox, setRotateBox }) {
             </div>
             <div className={styles.linkWrapper}>
                 <span className={styles.numbers}>.03</span>
-                <span className={styles.navLink}>Backdoor for hackers</span>
+                <span className={styles.navLink}>Get in touch</span>
             </div>
             <div className={styles.linkWrapper}>
                 <span className={styles.numbers}>.04</span>

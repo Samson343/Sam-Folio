@@ -49,3 +49,13 @@
 .button:hover {
     background-color: var(--electricpurple);
 }
+
+@media only screen and ( max-width: 600px)  { 
+    .barRoot {
+        flex-direction: column;
+        height: 20vh;
+        align-items:flex-start;
+        z-index: 10;
+    
+    }
+ }
