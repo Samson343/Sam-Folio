@@ -17,25 +17,25 @@ function NavBar ({ rotateBox, setRotateBox }) {
                 <span className={styles.numbers}>.01</span>
                 <span onClick={() => {
                     
-                        console.log("rotate box", rotateBox)
-                            rotateBox ? 
-                            setRotateBox(false) :
-                            setRotateBox(true)
+                        // console.log("rotate box", rotateBox)
+                        //     rotateBox ? 
+                        //     setRotateBox(false) :
+                        //     setRotateBox(true)
                     handleClick(1000)}} className={styles.navLink}>About me</span>
             </div>
             <div className={styles.linkWrapper}>
                 <span className={styles.numbers}>.02</span>
                 <span onClick={() => {
                     
-                    console.log("rotate box", rotateBox)
-                        rotateBox ? 
-                        setRotateBox(false) :
-                        setRotateBox(true)
+                    // console.log("rotate box", rotateBox)
+                    //     rotateBox ? 
+                    //     setRotateBox(false) :
+                    //     setRotateBox(true)
                 handleClick(2000)}} className={styles.navLink}>Projects</span>
             </div>
             <div className={styles.linkWrapper}>
                 <span className={styles.numbers}>.03</span>
-                <span className={styles.navLink}>Backdoor for hackers</span>
+                <span className={styles.navLink}>Get in touch</span>
             </div>
             <div className={styles.linkWrapper}>
                 <span className={styles.numbers}>.04</span>
