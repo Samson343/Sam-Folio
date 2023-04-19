@@ -20,6 +20,7 @@
     color: var(--light-slate);
     margin-left: 8px;
     user-select: none;
+    text-decoration: none;
     font-family: var(--font-sans);
     font-size: calc(8px + 0.65vmin);
     transition: color 0.25s, margin-right 0.25s;
