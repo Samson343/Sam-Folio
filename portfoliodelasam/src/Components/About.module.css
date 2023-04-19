@@ -255,7 +255,7 @@
     .aboutBackground {
       width: 80%;
       padding-top: 8%;
-      height: 48%;
+      height: 49%;
     }
     .techList {
       margin-top: 10%;
@@ -280,11 +280,12 @@
       margin-left: 10vw;
       padding-left: 10px;
       height:5.5%;
-      margin-top: 21.2vh; 
+      margin-top: 18.2vh; 
       overflow-y: hidden;
     }
     .aboutHr {
       width: 80%;
+      margin-top: 24.5vh;
     }
     
 
