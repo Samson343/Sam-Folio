@@ -16,12 +16,7 @@
     border-bottom: 1px solid var(--dark-slate);
 }
 .bottomHr {
-    bottom:0;
-    width: 100%;
-    position: absolute;
-    background-color: var(--dark-slate);
-    color: var(--dark-slate);
-    margin: 0;
+    display: none;
 }
 
 .aboutRoot {
@@ -58,6 +53,7 @@
     height: 30vmin;
     width: 30vmin;
     height: 48vmin;
+    z-index: 1;
     width: 48vmin;
     background-color: var(--primary);
 
@@ -856,6 +852,16 @@ body::-webkit-scrollbar-track-piece {
  .descriptionText {
     width: 73%;
  }
-  
-
+  .bottomHr {
+    display: inline;
+    bottom:-1px;
+    width: 100%;
+    position: absolute;
+    border: 0.5px solid var(--dark-slate);
+    margin: 0;
+    padding: 0;
+  }
+  .homeRoot {
+    border-bottom: none;
+  }
   }

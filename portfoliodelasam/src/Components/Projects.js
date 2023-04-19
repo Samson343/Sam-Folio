@@ -40,7 +40,7 @@ function Projects() {
                         </div>
 
                         <div className={styles.pictureBackground}>
-                          <a className={styles.Link} href="https://super-valkyrie-a29964.netlify.app/" target="_blank" rel="noreferrer">
+                          <a className={styles.Link} href="https://hike-seek.onrender.com/" target="_blank" rel="noreferrer">
                             <img className={styles.screenshot} src="hike&seekScreenshot.png" alt='Hike and Seek'></img>
                           </a>
                         </div>
