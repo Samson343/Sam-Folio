@@ -15,6 +15,14 @@
     background-color: var(--primary);
     border-bottom: 1px solid var(--dark-slate);
 }
+.bottomHr {
+    bottom:0;
+    width: 100%;
+    position: absolute;
+    background-color: var(--dark-slate);
+    color: var(--dark-slate);
+    margin: 0;
+}
 
 .aboutRoot {
     display: flex;
