@@ -30,15 +30,11 @@
 .bottomLeftDiagonal {
     /* margin-top: 25vmin; */
     border: 2px solid var(--slate);
-    height: 30vmin;
-    width: 30vmin;
     height: 48vmin;
     width: 48vmin;
     z-index: 1;
     background-color: var(--primary);
-
     transform: rotate(45deg);
-
     transform-origin: left;
     position: absolute;
     /* margin-top: 74.6vmin;
@@ -50,18 +46,13 @@
 
 .bottomLeftAfter {
     border: 2px solid var(--slate);
-    height: 30vmin;
-    width: 30vmin;
     height: 48vmin;
     z-index: 1;
     width: 48vmin;
     background-color: var(--primary);
-
     transform: rotate(45deg);
-
     transform-origin: left;
     position: absolute;
-    margin-top: 74.5vmin;
     margin-top: 58.7vh;
     -webkit-animation: rotate-90-cwAfter 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
     animation: rotate-90-cwAfter 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
@@ -90,8 +81,8 @@
     border-color: var(--electricgreen);
     padding: calc(4px + 0.35vmin);
     align-self: center;
-    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
-    font-family: var(--font-sans);
+    /* font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    font-family: var(--font-sans); */
     font-family: 'Open Sans';
     font-size: calc(5.5px + 0.78vmin);
     margin-top: 2px;
@@ -263,14 +254,14 @@
 }
 
 .nameText {
-    color: var(--fontColor);
+    /* color: var(--fontColor); */
     color: var(--light-slate);
     align-self: center;
     margin: 0;
     margin-bottom: 1vh;
-    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    /* font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
     font-family: 'Open Sans', sans-serif;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     font-family:'Open Sans';
     /* font-family: 'Proxima Nova', sans-serif;
     font-family: 'Lato', sans-serif; */
@@ -285,7 +276,7 @@
     margin-top: 0;
     width: 63%;
     color: var(--dark-slate);
-    font-family: var(--font-sans);
+    /* font-family: var(--font-sans); */
     font-family:'Open Sans';
     /* font-family: var(--font-mono); */
     font-size: calc(6.5px + 0.8vmin);
@@ -301,8 +292,8 @@
     /* margin-right: 35%; */
     font-size: calc(7px + 0.8vmin);
     color: var(--light-slate);
-    font-family: var(--font-sans);
-    font-family: var(--font-mono);
+    /* font-family: var(--font-sans);
+    font-family: var(--font-mono); */
     font-family:'Open Sans';
     -webkit-animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
     animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;

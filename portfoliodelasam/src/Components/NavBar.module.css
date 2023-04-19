@@ -21,7 +21,7 @@
     margin-left: 8px;
     user-select: none;
     text-decoration: none;
-    font-family: var(--font-sans);
+    font-family: 'Open Sans';
     font-size: calc(8px + 0.65vmin);
     transition: color 0.25s, margin-right 0.25s;
 }
@@ -29,7 +29,7 @@
     color: var(--light-slate);
     margin-left: 8px;
     user-select: none;
-    font-family: var(--font-sans);
+    font-family: 'Open Sans';
     font-size: calc(8px + 0.65vmin);
     text-decoration: none;
     transition: color 0.25s, margin-right 0.25s;
@@ -45,7 +45,7 @@
     padding: 8px;
     /* align-self: center; */
     font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
-    font-size: calc(5.5px + 0.78vmin);
+    /* font-size: calc(5.5px + 0.78vmin); */
 }
 .button:hover {
     background-color: var(--electricpurple);
