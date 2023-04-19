@@ -61,7 +61,7 @@ function Projects() {
                         </div>
 
                         <div className={styles.pictureBackground2}>
-                          <a className={styles.Link} href="https://super-valkyrie-a29964.netlify.app/" target="_blank" rel="noreferrer">
+                          <a className={styles.Link} href="https://connect4-z613.onrender.com" target="_blank" rel="noreferrer">
                             <img className={styles.screenshot} src="connectedScreenshot.PNG" alt='Connected'></img>
                           </a>
                         </div>
