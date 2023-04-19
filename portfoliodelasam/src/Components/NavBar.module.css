@@ -21,7 +21,7 @@
     margin-left: 8px;
     user-select: none;
     text-decoration: none;
-    font-family: 'Open Sans';
+    font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
     font-size: calc(8px + 0.65vmin);
     transition: color 0.25s, margin-right 0.25s;
 }
@@ -29,7 +29,7 @@
     color: var(--light-slate);
     margin-left: 8px;
     user-select: none;
-    font-family: 'Open Sans';
+    font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
     font-size: calc(8px + 0.65vmin);
     text-decoration: none;
     transition: color 0.25s, margin-right 0.25s;
