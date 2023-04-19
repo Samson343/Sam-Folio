@@ -31,7 +31,7 @@ function App() {
           </>
           } 
         />
-        <Route path='/home' element={
+        <Route path='/' element={
           <>
            <NavBar
              rotateBox= { rotateBox }
