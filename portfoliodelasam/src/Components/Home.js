@@ -91,12 +91,12 @@ function Home({ setRouteTo, rotateBox, setRotateBox }) {
   <div className={styles.snowflake}>
   .
   </div>
-  <div className={styles.snowflake}>
+  {/* <div className={styles.snowflake}>
     .
-  </div>
-  <div className={styles.snowflake}>
+  </div> */}
+  {/* <div className={styles.snowflake}>
     .
-  </div>
+  </div> */}
   {/* <div className={styles.snowflake}>
     .
   </div>
