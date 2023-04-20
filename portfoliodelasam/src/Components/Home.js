@@ -3,11 +3,10 @@ import styles from './Home.module.css'
 import { Link } from "react-router-dom";
 import { FiGithub } from 'react-icons/fi'
 import { AiFillLinkedin } from 'react-icons/ai'
-
 import { SiCodewars } from 'react-icons/si'
 import About from "./About";
 import Projects from "./Projects";
-
+import Contact from "./Contact";
 
 function Home({ setRouteTo, rotateBox, setRotateBox }) {
     const [scrollPosition, setScrollPosition] = useState(window.scrollY);
@@ -75,6 +74,7 @@ function Home({ setRouteTo, rotateBox, setRotateBox }) {
   .
   </div>
   <div className={styles.snowflake}>
+    .
   </div>
   <div className={styles.snowflake}>
   .
@@ -85,11 +85,12 @@ function Home({ setRouteTo, rotateBox, setRotateBox }) {
   <div className={styles.snowflake}>
   .
   </div>
-  {/* <div className={styles.snowflake}>
-  </div> */}
-  {/* <div className={styles.snowflake}>
+  <div className={styles.snowflake}>
+    .
+  </div>
+  <div className={styles.snowflake}>
   .
-  </div> */}
+  </div>
   <div className={styles.snowflake}>
     .
   </div>
@@ -187,6 +188,7 @@ function Home({ setRouteTo, rotateBox, setRotateBox }) {
                 scrollPosition={scrollPosition}
             />
             <Projects />
+            {/* <Contact /> */}
         </>
     )
 }
