@@ -671,9 +671,9 @@ body::-webkit-scrollbar-track-piece {
 }
 
 .snowflake:nth-of-type(6) {
-    left: 65%;
-    -webkit-animation-delay: 6s, 2s;
-    animation-delay: 6s, 2s
+    left: 70%;
+    -webkit-animation-delay: 6.7s, 2s;
+    animation-delay: 6.7s, 2s
 }
 
 .snowflake:nth-of-type(7) {
@@ -683,7 +683,7 @@ body::-webkit-scrollbar-track-piece {
 }
 
 .snowflake:nth-of-type(8) {
-    left: 80%;
+    left: 86%;
     -webkit-animation-delay: 1s, 0s;
     animation-delay: 1s, 0s
 } 
@@ -867,7 +867,7 @@ body::-webkit-scrollbar-track-piece {
     /* display: none; */
 }
 
-.snowflake:nth-of-type(8) {
+.snowflake:nth-of-type(3) {
     display: none;
 } 
   }

@@ -75,9 +75,8 @@ function Projects() {
 
                         <span className={styles.projectDescription}> A web-app that aims to mirror the intricacies and subtle complexities of Craigslist, built from the ground up. Users can
                             post items for sale, edit existing posts, message sellers to inquire about their items, and so much more!
-                            ● In-depth REST API integration that handles user authentication, creating and editing posts, and sending
-                            messages to other users on the platform.
-                            ● Designed and implemented a user-friendly UI with all CSS written from scratch </span>
+                            It features in-depth REST API integration that handles user authentication, creating and editing posts, and sending
+                            messages to other users on the platform. Designed and implemented a user-friendly UI with all CSS written from scratch for bare-bones but effective styling display.</span>
 
                         <div className={styles.techIcons}>
                             <DiReact className={styles.techIcon} />

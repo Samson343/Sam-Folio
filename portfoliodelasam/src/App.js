@@ -6,6 +6,7 @@ import About from './Components/About'
 import Home from './Components/Home';
 import NavBar from './Components/NavBar'
 import styles from './App.css'
+import Contact from './Components/Contact';
 
 function App() {
   const [ routeTo, setRouteTo ] = useState('')
@@ -42,6 +43,7 @@ function App() {
               rotateBox={ rotateBox }
               setRotateBox={ setRotateBox }
             />
+            <Contact />
           </>
           } 
         />

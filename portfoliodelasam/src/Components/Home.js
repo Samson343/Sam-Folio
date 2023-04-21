@@ -188,7 +188,7 @@ function Home({ setRouteTo, rotateBox, setRotateBox }) {
                 scrollPosition={scrollPosition}
             />
             <Projects />
-            {/* <Contact /> */}
+            
         </>
     )
 }
