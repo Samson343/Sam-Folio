@@ -6,14 +6,15 @@ import { AiFillLinkedin } from 'react-icons/ai'
 import { SiCodewars } from 'react-icons/si'
 import About from "./About";
 import Projects from "./Projects";
-import Contact from "./Contact";
+import Contact from "./Recommendations";
 
-function Home({ setRouteTo, rotateBox, setRotateBox }) {
-    const [scrollPosition, setScrollPosition] = useState(window.scrollY);
+function Home({ setRouteTo, rotateBox, setRotateBox, scrollPosition, setScrollPosition }) {
+    
 
     useEffect(() => {
         function handleScroll() {
             setScrollPosition(window.scrollY); // Update the scroll position state
+            
         }
         window.addEventListener('scroll', handleScroll);
         // return () => window.removeEventListener('scroll', handleScroll);
