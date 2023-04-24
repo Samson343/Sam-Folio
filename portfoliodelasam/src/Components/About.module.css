@@ -101,7 +101,7 @@
 .aboutPicture {
   object-fit: cover;
   width: 9%;
-  min-width: calc(60px + 6.5vmax);
+  min-width: calc(50px + 6.5vmax);
   position: absolute;
   /* margin-left: 64vw; */
   margin-left: 43%;

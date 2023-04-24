@@ -27,7 +27,7 @@ function Recommendations ({ scrollPosition, setScrollPosition }) {
                 
 
                     <Controller>
-                        <Scene duration={990} triggerHook={0.3} pin>
+                        <Scene duration={1015} triggerHook={0.3} pin>
                             <div className={styles.centerWrapper}>
                                 <BsFillChatRightQuoteFill size={"8vmin"} className={styles.quoteIcon} />
 
@@ -39,13 +39,17 @@ function Recommendations ({ scrollPosition, setScrollPosition }) {
                         </Scene>
                     </Controller>
                     <div className={styles.pictureWrapper}>
-                        <img src="headshotAdam.png" className={scrollPosition > 5300 ? styles.headshot : styles.headshotBefore} alt="Adam Marley"></img>
-                        <div className={scrollPosition > 4900 ? styles.titleWrapper : styles.disabled}>
+                        <img src="headshotAdam.png" className={scrollPosition >5300? styles.headshot : styles.headshotBefore} alt="Adam Marley"></img>
+                        <div className={scrollPosition > 5000 ? styles.titleWrapper : styles.disabled}>
                             <h5 className={styles.name}>Adam Marley</h5>
                             <h6 className={styles.jobTitle}>Associate Instuctor/Mentor</h6>
                             <p className={styles.company}>Fullstack Academy</p>
                         </div>
                     </div>
+
+                    {/* next step is to get this to be a divider between each reco */}
+                    {/* <hr className={styles.recoDivider}></hr> */}
+                    
                     {/* <Controller>
                         <Scene duration={150} triggerHook={0.5} pin>
                             <div className={styles.pictureWrapper}>
@@ -56,7 +60,7 @@ function Recommendations ({ scrollPosition, setScrollPosition }) {
                 </div>
                 <div className={styles.backgroundOpacifier}>
                     <Controller>
-                        <Scene duration={850} triggerHook={0.3} pin>
+                        <Scene duration={1015} triggerHook={0.3} pin>
                             <div className={styles.centerWrapper}>
                                 <BsFillChatRightQuoteFill size={"8vmin"} className={styles.quoteIcon} />
 
@@ -69,7 +73,7 @@ function Recommendations ({ scrollPosition, setScrollPosition }) {
                 </div>
                 <div className={styles.backgroundOpacifier}>
                     <Controller>
-                        <Scene duration={850} triggerHook={0.3} pin>
+                        <Scene duration={1015} triggerHook={0.3} pin>
                             <div className={styles.centerWrapper}>
                                 <BsFillChatRightQuoteFill size={"8vmin"} className={styles.quoteIcon} />
 

@@ -6,7 +6,7 @@ import About from './Components/About'
 import Home from './Components/Home';
 import NavBar from './Components/NavBar'
 import styles from './App.css'
-import Contact from './Components/Recommendations';
+import Contact from './Components/Contact';
 import Recommendations from './Components/Recommendations';
 
 function App() {
@@ -51,6 +51,7 @@ function App() {
               scrollPosition={scrollPosition}
               setScrollPosition={setScrollPosition}
             />
+            <Contact/>
           </>
           } 
         />
