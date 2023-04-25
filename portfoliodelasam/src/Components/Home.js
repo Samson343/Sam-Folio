@@ -8,7 +8,7 @@ import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Recommendations";
 
-function Home({ setRouteTo, rotateBox, setRotateBox, scrollPosition, setScrollPosition }) {
+function Home({ setRouteTo, rotateBox, setRotateBox, scrollPosition, setScrollPosition, isVisible, setIsVisible }) {
     
 
     useEffect(() => {
@@ -187,8 +187,10 @@ function Home({ setRouteTo, rotateBox, setRotateBox, scrollPosition, setScrollPo
             </div>
             <About
                 scrollPosition={scrollPosition}
+                isVisible = {isVisible} 
+              setIsVisible = {setIsVisible}
             />
-            <Projects />
+          
             
         </>
     )

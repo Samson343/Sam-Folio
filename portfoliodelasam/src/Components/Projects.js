@@ -1,3 +1,4 @@
+import { useEffect, useState, useRef } from 'react';
 import React from "react";
 import styles from './Projects.module.css'
 import { DiPostgresql, DiReact, DiNodejsSmall, DiNodejs, DiBootstrap, DiJavascript1, DiAndroid, DiCss3, DiHtml5, DiJavascript, } from 'react-icons/di'
@@ -5,17 +6,50 @@ import { SiExpress } from "react-icons/si";
 import { Link } from "react-router-dom";
 
 function Projects() {
-    return (
-        <div className={styles.projectsRoot}>
-            <div className={styles.projectHeaderWrapper}>
-                <h3 className={styles.projectHeader}>
-                    <span className={styles.numbers}>.02</span >
-                    Projects
-                </h3>
-                <span className={styles.projectHeaderLine}></span>
+    const [isVisible, setIsVisible] = useState(false)
+    const ref = useRef(null);
 
-            </div>
-            <hr className={styles.projectHr}></hr>
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                    console.log(isVisible)
+                }
+
+            },
+            {
+                root: null,
+                rootMargin: "0px",
+                threshold: 0.2, // Trigger when half of the element is visible
+            }
+        );
+
+        if (ref.current) {
+            observer.observe(ref.current);
+        }
+
+        return () => {
+            if (ref.current) {
+                observer.unobserve(ref.current);
+            }
+        };
+    }, []);
+    return (
+        <div ref={ref} className={styles.projectsRoot}>
+            {isVisible &&
+                <>
+                    <div className={styles.projectHeaderWrapper}>
+                        <h3 className={styles.projectHeader}>
+                            <span className={styles.numbers}>.02</span >
+                            Projects
+                        </h3>
+                        <span className={styles.projectHeaderLine}></span>
+
+                    </div>
+                    <hr className={styles.projectHr}></hr>
+                
+            
             <div className={styles.projectWrapper}>
 
 
@@ -40,9 +74,9 @@ function Projects() {
                         </div>
 
                         <div className={styles.pictureBackground}>
-                          <a className={styles.Link} href="https://hike-seek.onrender.com/" target="_blank" rel="noreferrer">
-                            <img className={styles.screenshot} src="hike&seekScreenshot.png" alt='Hike and Seek'></img>
-                          </a>
+                            <a className={styles.Link} href="https://hike-seek.onrender.com/" target="_blank" rel="noreferrer">
+                                <img className={styles.screenshot} src="hike&seekScreenshot.png" alt='Hike and Seek'></img>
+                            </a>
                         </div>
 
                     </div>
@@ -61,9 +95,9 @@ function Projects() {
                         </div>
 
                         <div className={styles.pictureBackground2}>
-                          <a className={styles.Link} href="https://connect4-z613.onrender.com" target="_blank" rel="noreferrer">
-                            <img className={styles.screenshot} src="connectedScreenshot.PNG" alt='Connected'></img>
-                          </a>
+                            <a className={styles.Link} href="https://connect4-z613.onrender.com" target="_blank" rel="noreferrer">
+                                <img className={styles.screenshot} src="connectedScreenshot.PNG" alt='Connected'></img>
+                            </a>
                         </div>
 
                     </div>
@@ -89,7 +123,7 @@ function Projects() {
                         </div>
 
                         <div className={styles.pictureBackground}>
-                            <a className={styles.Link}  href ="https://super-semolina-b1e7cc.netlify.app/" target="_blank" rel="noreferrer">
+                            <a className={styles.Link} href="https://super-semolina-b1e7cc.netlify.app/" target="_blank" rel="noreferrer">
                                 <img className={styles.screenshot} src="strangersThingsScreenshot4.PNG" alt='Connected'></img>
                             </a>
                         </div>
@@ -99,6 +133,8 @@ function Projects() {
 
 
             </div>
+            </>
+            }
         </div>
     )
 }

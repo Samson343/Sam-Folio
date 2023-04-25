@@ -8,11 +8,13 @@ import NavBar from './Components/NavBar'
 import styles from './App.css'
 import Contact from './Components/Contact';
 import Recommendations from './Components/Recommendations';
+import Projects from './Components/Projects';
 
 function App() {
   const [ routeTo, setRouteTo ] = useState('')
   const [rotateBox, setRotateBox] = useState(false)
   const [scrollPosition, setScrollPosition] = useState(window.scrollY);
+  
 
   return (
     <div className={styles.appRoot}>
@@ -46,7 +48,9 @@ function App() {
               setRotateBox={ setRotateBox }
               scrollPosition={scrollPosition}
               setScrollPosition={setScrollPosition}
+             
             />
+            <Projects/>
             <Recommendations 
               scrollPosition={scrollPosition}
               setScrollPosition={setScrollPosition}
