@@ -5,7 +5,19 @@
     flex-direction: column;
     /* justify-content: center; */
     padding-top: 2vh;
+    overflow-x: hidden;
 }
+.title {
+    margin-top: 2vmin;
+    position: absolute;
+    padding: 1vmin;
+    background-color: var(--dark-slate-transparent);
+    margin-left: 22%;
+    color: var(--electricgreen);
+    left:0;
+    font-family: var(--font-mono);
+    /* box-shadow: 1px 1px 1px 1px rgb(108, 108, 108); */
+  }
 .centerBox {
     z-index: 1;
     background-color: var(--primary);
@@ -82,7 +94,20 @@
     animation-iteration-count: infinite, infinite;
     animation-play-state: running, running
   }
+  .aBoxForBoxes {
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 60%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .box {
+    border: 1px solid var(--electricgreen);
+    width: calc(100%/2);
 
+  }
 
 
 
@@ -100,7 +125,7 @@
 
 @-webkit-keyframes snowflakes-fall {
     0% {
-        left: -10%
+        left: -5%
     }
 
     100% {
@@ -124,7 +149,7 @@
 
 @keyframes snowflakes-fall {
     0% {
-        left: -10%
+        left: -5%
     }
 
     100% {

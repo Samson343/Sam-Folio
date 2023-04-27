@@ -35,6 +35,7 @@ function Projects() {
             }
         };
     }, []);
+
     return (
         <div ref={ref} className={styles.projectsRoot}>
             {isVisible &&
@@ -83,7 +84,7 @@ function Projects() {
                 </div>
 
                 <div className={styles.project1Wrapper}>
-                    <div className={styles.projectBackground}>
+                    <div className={styles.projectBackground2}>
                         <div className={styles.titleRight}>Connected - Browser Game</div>
                         <span className={styles.projectDescription2}>An enjoyable browser game built from the ground up. Features a fully functional, home-grown, AI opponent that capitalizes on winning setups and blocks your attempts to win. The goal was to demo my Javascript skills through a simple game with a relatively complex logical framework as it relates to the DOM. Please feel free and hop on and play a game against that insidious AI! Side note - I built this early in my journey which means it's unfortunately not mobile friendly - enjoy this one on your desktop or laptop!</span>
 

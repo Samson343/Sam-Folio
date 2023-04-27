@@ -16,7 +16,16 @@ function Contact() {
             <hr className={styles.aboutHr}></hr>
 
             <div className={styles.centerBox}>
+                <p className={`${styles.title} ${styles.animateFlicker}`}>Like what you see? Let's talk.</p>
 
+                <div className={styles.aBoxForBoxes}>
+                    <p className={styles.box}></p>
+                    <p className={styles.box}></p>
+                    <p className={styles.box}></p>
+                    <p className={styles.box}></p>
+                    <p className={styles.box}></p>
+                    <p className={styles.box}></p>
+                </div>
             </div>
 
             <div className={styles.snowflake}>
@@ -55,11 +64,11 @@ function Contact() {
             <div className={styles.snowflake}>
                 .
             </div>
-            
+
             <div className={styles.snowflake}>
                 .
             </div>
-            
+
             {/* <img className={styles.spaceship} src="spaceship.png" alt="spaceship"></img> */}
         </div>
     )
