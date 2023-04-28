@@ -97,7 +97,7 @@ function Projects() {
 
                         <div className={styles.pictureBackground2}>
                             <a className={styles.Link} href="https://connect4-z613.onrender.com" target="_blank" rel="noreferrer">
-                                <img className={styles.screenshot} src="connectedScreenshot.PNG" alt='Connected'></img>
+                                <img className={styles.screenshot2} src="connectedScreenshot.PNG" alt='Connected'></img>
                             </a>
                         </div>
 

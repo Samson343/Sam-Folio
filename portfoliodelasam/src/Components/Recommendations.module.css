@@ -95,7 +95,7 @@
     /* height: 40px;
     width: 50px; */
     /* border-bottom: 10px solid var(--dark-slate); */
-    border-left: 7px solid var(--navy);
+    /* border-left: 7px solid var(--navy); */
     border-right: 1px solid var(--slate);
     box-shadow: 1px 1px 2px var(--light-slate);
     margin-bottom: 5px;
@@ -116,7 +116,7 @@
     font-family: var(--font-mono);
     font-size: calc(5px + 1.05vmin);
     border-radius: 4%;
-    border-right: 7px solid var(--navy);
+    /* border-right: 7px solid var(--navy); */
 
     /* height: 40px;
     width: 50px; */
@@ -169,14 +169,14 @@
 }
 
 .reko {
-    border-right: 1px solid var(--electricgreen);
+    border-right: 1px solid var(--light-slate);
     font-size: calc(2px + 0.8em);
     padding-right: 20px;
     margin-bottom: 40px;
 
 }
 .rekoMid {
-    border-left: 1px solid var(--electricgreen);
+    border-left: 1px solid var(--light-slate);
     padding-left: 20px;
     font-size: calc(2px + 0.8em);
     min-width: fit-content;
@@ -258,7 +258,7 @@
     font-family: var(--font-sans);
     font-size: calc(5px + 1.05vmin);
     margin-bottom: 8px;
-    border-bottom: 1px solid var(--dark-slate-transparent);
+    border-bottom: 1px solid var(--electricgreen);
     -webkit-animation: slide-in-blurred-bottom 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     animation: slide-in-blurred-bottom 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }

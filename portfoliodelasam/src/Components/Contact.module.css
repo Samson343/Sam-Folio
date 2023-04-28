@@ -11,13 +11,35 @@
     margin-top: 2vmin;
     position: absolute;
     padding: 1vmin;
+    padding-left: 1vmin;
     background-color: var(--dark-slate-transparent);
     margin-left: 22%;
     color: var(--electricgreen);
     left:0;
+    /* max-width: 19em; */
     font-family: var(--font-mono);
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap; 
     /* box-shadow: 1px 1px 1px 1px rgb(108, 108, 108); */
   }
+
+  /* .title {
+    margin-top: 2vmin;
+    position: absolute;
+    padding: 1vmin;
+    overflow: hidden;
+    width: 14em;
+    text-align: center;
+    white-space: nowrap;
+    background-color: var(--dark-slate-transparent);
+    margin-left: 22%;
+    color: var(--electricgreen);
+    left:0;
+    transform: translateY(-50%);   
+    font-family: var(--font-mono);
+   
+  } */
 .centerBox {
     z-index: 1;
     background-color: var(--primary);
@@ -84,19 +106,19 @@
   
   /* margin-top: 80vh; */
   -webkit-animation-name: snowflakes-fall, snowflakes-shake;
-    -webkit-animation-duration: 10s, 3s;
+    -webkit-animation-duration: 8s, 3s;
     -webkit-animation-timing-function: linear, ease-in-out;
     -webkit-animation-iteration-count: infinite, infinite;
     -webkit-animation-play-state: running, running;
     animation-name: snowflakes-fall, snowflakes-shake;
-    animation-duration: 10s, 3s;
+    animation-duration: 8s, 3s;
     animation-timing-function: linear, ease-in-out;
     animation-iteration-count: infinite, infinite;
     animation-play-state: running, running
   }
   .aBoxForBoxes {
-    margin-top: 10%;
-    margin-left: 10%;
+    margin-top: 15%;
+    margin-left: 15%;
     width: 60%;
     height: 60%;
     display: flex;
@@ -105,9 +127,23 @@
   }
   .box {
     border: 1px solid var(--electricgreen);
-    width: calc(100%/2);
-
+    width: calc(90%/3);
+    height: calc(99%/3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+  .socialIcons {
+    color: var(--light-slate);
+    size: 5.5vh;
+    
+    transition: margin-left 0.1s, color 0.25s;
+}
+
+.socialIcons:hover {
+    color: var(--lightest-slate);
+    margin-left: 4px;
+}
 
 
 
@@ -295,3 +331,18 @@
 
 
 
+  
+  
+  /* Animation */
+  .animTypewriter{
+    /* animation: typewriter 4s steps(44) 1s 1 normal both,
+               blinkTextCursor 500ms steps(44) infinite normal; */
+  }
+  @keyframes typewriter{
+    from{width: 0px;}
+    to{width: 24em;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: var(--electricgreen);}
+    to{border-right-color: var(--electricgreen);}
+  }
