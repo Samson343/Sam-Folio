@@ -5,7 +5,7 @@ import { FaGamepad, FaGuitar, FaHiking, FaRunning } from 'react-icons/fa'
 import { GiGuitarBassHead, GiRunningShoe } from 'react-icons/gi'
 
 
-function About({ setRouteTo, scrollPosition }) {
+function About({ setRouteTo, scrollPosition, target1Ref }) {
     const ref = useRef(null);
     const [isVisible, setIsVisible] = useState(false);
     
@@ -36,8 +36,10 @@ function About({ setRouteTo, scrollPosition }) {
             }
         };
     }, []);
+
     return (
-        <div className={styles.aboutRoot} ref={ref}>
+        <div className={styles.aboutRoot} ref={ref} >
+            <div ref = {target1Ref}>
             {isVisible &&
                 <>
                     <div className={styles.aboutHeaderWrapper}>
@@ -97,6 +99,7 @@ function About({ setRouteTo, scrollPosition }) {
                 }}
               > Go home </button>
             </Link> */}
+            </div>
         </div>
 
 

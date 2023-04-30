@@ -356,7 +356,13 @@
       height: 45vh
      
     }
+    .projectBackground2 {
+      height: 45vh;
+      margin-left: 5%;
+      width: 90%;
+    }
     .projectDescription2 {
+      
       margin-left: 10%;
     }
     .title {
@@ -388,6 +394,7 @@
       font-size: calc(5.5px + 1.05vmin);
       margin-top: 10vh;
       width: 80%;
+
     }
     
    }

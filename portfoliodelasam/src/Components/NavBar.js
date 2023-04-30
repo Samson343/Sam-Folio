@@ -2,7 +2,14 @@ import React, {useState} from "react";
 import styles from './NavBar.module.css'
 
 
-function NavBar ({ rotateBox, setRotateBox }) {
+function NavBar ({ rotateBox, setRotateBox, target1Ref, target2Ref, target3Ref }) {
+
+    // const handleClick = (target) => {
+        
+       
+    //       target.current.scrollIntoView({ behavior: 'smooth' });
+        
+    //   };
     
     const handleClick = (scrollHere) => {
         window.scrollTo({

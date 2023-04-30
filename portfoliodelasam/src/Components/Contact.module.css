@@ -7,6 +7,7 @@
     padding-top: 2vh;
     overflow-x: hidden;
 }
+
 .title {
     margin-top: 2vmin;
     position: absolute;
@@ -15,16 +16,16 @@
     background-color: var(--dark-slate-transparent);
     margin-left: 22%;
     color: var(--electricgreen);
-    left:0;
+    left: 0;
     /* max-width: 19em; */
     font-family: var(--font-mono);
     overflow: hidden;
     text-align: center;
-    white-space: nowrap; 
+    white-space: nowrap;
     /* box-shadow: 1px 1px 1px 1px rgb(108, 108, 108); */
-  }
+}
 
-  /* .title {
+/* .title {
     margin-top: 2vmin;
     position: absolute;
     padding: 1vmin;
@@ -49,7 +50,7 @@
     align-self: center;
     margin-top: 15vh;
     border-top: 1px solid var(--dark-slate-transparent);
-    
+
     border-right: 1px solid var(--electricgreen);
     border-bottom: 1px solid var(--electricgreen);
 }
@@ -60,8 +61,10 @@
     font-family: var(--font-mono);
     color: var(--slate);
     font-size: calc(8px + 1.1vmin);
-  }
-  .aboutHeaderWrapper {
+    padding-left: 5px;
+}
+
+.aboutHeaderWrapper {
     z-index: 1;
     position: absolute;
     display: flex;
@@ -78,34 +81,38 @@
     border-radius: 5%;
     /* background-color: var(--dark-navy); */
     background-color: rgb(2, 2, 14);
-  }
-  .innerHeader {
+}
+
+.innerHeader {
     border-bottom: 1px solid var(--slate);
     width: 40%;
     padding-bottom: 2px;
     min-height: fit-content;
-  }
-  .numbers {
+}
+
+.numbers {
     color: var(--electricgreen);
     margin-right: 10px;
     font-family: 'Roboto mono', sans-serif;
-  }
-  .aboutHr {
+}
+
+.aboutHr {
     margin-top: 11vh;
     margin-left: 17.5%;
     width: 65%;
     border-color: var(--dark-slate);
     /* position: absolute; */
-  }
-  .spaceship {
+}
+
+.spaceship {
     width: 10%;
-  min-width: 16vmin;
-  position: absolute;
-  left:0;
-  opacity: 0.5;
-  
-  /* margin-top: 80vh; */
-  -webkit-animation-name: snowflakes-fall, snowflakes-shake;
+    min-width: 16vmin;
+    position: absolute;
+    left: 0;
+    opacity: 0.5;
+
+    /* margin-top: 80vh; */
+    -webkit-animation-name: snowflakes-fall, snowflakes-shake;
     -webkit-animation-duration: 8s, 3s;
     -webkit-animation-timing-function: linear, ease-in-out;
     -webkit-animation-iteration-count: infinite, infinite;
@@ -115,8 +122,9 @@
     animation-timing-function: linear, ease-in-out;
     animation-iteration-count: infinite, infinite;
     animation-play-state: running, running
-  }
-  .aBoxForBoxes {
+}
+
+.aBoxForBoxes {
     margin-top: 15%;
     margin-left: 15%;
     width: 60%;
@@ -124,19 +132,26 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-  .box {
+}
+
+.box {
     border: 1px solid var(--electricgreen);
     width: calc(90%/3);
     height: calc(99%/3);
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .socialIcons {
+    margin-top: 0;
+    transition: background-color 0.35s;
+}
+
+.box:hover {
+    background-color: var(--electricgreen);
+}
+
+.socialIcons {
     color: var(--light-slate);
     size: 5.5vh;
-    
     transition: margin-left 0.1s, color 0.25s;
 }
 
@@ -145,6 +160,13 @@
     margin-left: 4px;
 }
 
+.footer {
+    position: absolute;
+    font-family: var(--font-mono);
+    margin-top: 10%;
+    right: 2%;
+    color: var(--dark-slate-transparent)
+}
 
 
 
@@ -206,7 +228,7 @@
 }
 
 .snowflake {
-    position:absolute;
+    position: absolute;
     /* margin-left: 70%; */
     /* top: -10%; */
     z-index: 0;
@@ -236,7 +258,7 @@
 
 .snowflake:nth-of-type(1) {
     margin-top: 23%;
-    color: red; 
+    color: red;
     font-size: 5em;
     -webkit-animation-delay: 1s, 1s;
     animation-delay: 1s, 1s
@@ -294,7 +316,7 @@
     margin-top: 90vh;
     -webkit-animation-delay: 1s, 0s;
     animation-delay: 1s, 0s
-} 
+}
 
 .snowflake:nth-of-type(9) {
     left: 28%;
@@ -309,6 +331,7 @@
     -webkit-animation-delay: 2s, 0s;
     animation-delay: 2s, 0s
 }
+
 .snowflake:nth-of-type(11) {
     left: 44%;
     margin-top: 48vh;
@@ -322,6 +345,7 @@
     -webkit-animation-delay: 6s, 3.1s;
     animation-delay: 6s, 3.1s
 }
+
 .snowflake:nth-of-type(13) {
     left: 11%;
     margin-top: 36vh;
@@ -331,18 +355,111 @@
 
 
 
-  
-  
-  /* Animation */
-  .animTypewriter{
+
+
+/* Animation */
+.animTypewriter {
     /* animation: typewriter 4s steps(44) 1s 1 normal both,
                blinkTextCursor 500ms steps(44) infinite normal; */
-  }
-  @keyframes typewriter{
-    from{width: 0px;}
-    to{width: 24em;}
-  }
-  @keyframes blinkTextCursor{
-    from{border-right-color: var(--electricgreen);}
-    to{border-right-color: var(--electricgreen);}
-  }
+}
+
+@keyframes typewriter {
+    from {
+        width: 0px;
+    }
+
+    to {
+        width: 24em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: var(--electricgreen);
+    }
+
+    to {
+        border-right-color: var(--electricgreen);
+    }
+}
+
+
+@media (max-width: 600px) {
+    .centerBox {
+        width: 80%;
+        height: 40vh 
+    }
+    .aBoxForBoxes {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 30%;
+    }
+    .title {
+        margin-left: 5%;
+        margin-top: 5vmin;
+        font-size: calc(7.5px + 1.35vmin);
+    }
+    .footer {
+        position: absolute;
+        font-family: var(--font-mono);
+        margin-top: 55%;
+        right: 2%;
+        color: var(--dark-slate-transparent);
+        font-size: calc(7.5px + 1.35vmin);
+    }
+    .aboutHeaderWrapper {
+        margin-left: 10vw;   
+    }
+    .aboutHr {
+        margin-top: 11vh;
+        margin-left: 10%;
+        width: 80%;
+        border-color: var(--dark-slate);
+        /* position: absolute; */
+    }
+    @-webkit-keyframes snowflakes-fall {
+        0% {
+            left: -5%
+        }
+
+        100% {
+            left: 95%
+        }
+    }
+
+    @-webkit-keyframes snowflakes-shake {
+
+        0%,
+        100% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0)
+        }
+
+        50% {
+            -webkit-transform: translateX(15%);
+            transform: translateX(15%)
+        }
+    }
+
+    @keyframes snowflakes-fall {
+        0% {
+            left: -5%
+        }
+
+        100% {
+            left: 95%
+        }
+    }
+
+    @keyframes snowflakes-shake {
+
+        0%,
+        100% {
+            transform: translateX(0)
+        }
+
+        50% {
+            transform: translateX(10%)
+        }
+    }
+}

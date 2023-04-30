@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import LoadingMain from './Components/LoadingMain';
 import About from './Components/About'
@@ -9,12 +9,17 @@ import styles from './App.css'
 import Contact from './Components/Contact';
 import Recommendations from './Components/Recommendations';
 import Projects from './Components/Projects';
+// import ScrollToElement from './ScrollToElement';
 
 function App() {
   const [ routeTo, setRouteTo ] = useState('')
   const [rotateBox, setRotateBox] = useState(false)
   const [scrollPosition, setScrollPosition] = useState(window.scrollY);
   
+  const target1Ref = useRef(null);
+  const target2Ref = useRef(null);
+  const target3Ref = useRef(null);
+
 
   return (
     <div className={styles.appRoot}>
@@ -32,6 +37,7 @@ function App() {
           <>
             <About
               setRouteTo={ setRouteTo }
+              ref = {target1Ref}
             />
           </>
           } 
@@ -41,6 +47,9 @@ function App() {
            <NavBar
              rotateBox= { rotateBox }
              setRotateBox= { setRotateBox }
+             target1Ref = {target1Ref}
+             target2Ref = {target2Ref}
+             target3Ref = {target2Ref}
            />
             <Home
               setRouteTo={ setRouteTo }

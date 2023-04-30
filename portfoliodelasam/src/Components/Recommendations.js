@@ -7,65 +7,73 @@ import { BsFillChatRightQuoteFill, BsFillChatLeftQuoteFill, BsChatLeftQuote } fr
 
 
 function Recommendations({ scrollPosition, setScrollPosition }) {
-    // const [isVisible, setIsVisible] = useState(false);
-    // const ref = useRef(null);
+    const [isVisible, setIsVisible] = useState(false);
+    const ref = useRef(null);
 
-    // useEffect(() => {
-    //     const observer = new IntersectionObserver(
-    //         ([entry]) => {
-    //             if (entry.isIntersecting) {
-    //                 setIsVisible(entry.isIntersecting);
-    //                 console.log(isVisible)
-    //             }
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                    console.log(isVisible)
+                }
 
-    //         },
-    //         {
-    //             root: null,
-    //             rootMargin: "0px",
-    //             threshold: 0.5, // Trigger when half of the element is visible
-    //         }
-    //     );
+            },
+            {
+                root: null,
+                rootMargin: "0px",
+                threshold: 0.08, // Trigger when half of the element is visible
+            }
+        );
 
-    //     if (ref.current) {
-    //         observer.observe(ref.current);
-    //     }
+        if (ref.current) {
+            observer.observe(ref.current);
+        }
 
-    //     return () => {
-    //         if (ref.current) {
-    //             observer.unobserve(ref.current);
-    //         }
-    //     };
-    // }, []);
+        return () => {
+            if (ref.current) {
+                observer.unobserve(ref.current);
+            }
+        };
+    }, []);
 
 
     return (
-        <div className={styles.contactRoot}>
+        <div className={styles.contactRoot} ref={ref}>
 
 
             <div className={styles.fireWrapper}>
-                <div className={styles.aboutHeaderWrapper}>
-                    <h3 className={styles.aboutHeader}>
-                        <span className={styles.numbers}>.03</span >
-                        Recos
-                    </h3>
-                    <span className={styles.aboutHeaderLine}></span>
-                </div>
-                <hr className={styles.aboutHr}></hr>
+                {isVisible &&
+                    <>
+                        <div className={styles.aboutHeaderWrapper}>
+                            <h3 className={styles.aboutHeader}>
+                                <span className={styles.numbers}>.03</span >
+                                Recos
+                            </h3>
+                            <span className={styles.aboutHeaderLine}></span>
+                        </div>
+
+                        <hr className={styles.aboutHr}></hr>
+                    </>
+                }
                 <div className={styles.backgroundOpacifier}>
 
+                    {isVisible &&
+                        <Controller>
+                            <Scene duration={'173%'} triggerHook={0.3} pin className = {styles.scrollContainer}>
 
-                    <Controller>
-                        <Scene duration={'173%'} triggerHook={0.3} pin>
-                            <div className={styles.centerWrapper}>
-                                <BsFillChatRightQuoteFill size={"7.2vmin"} className={styles.quoteIcon} />
+                                <div className={styles.centerWrapper1}>
+                                    <BsFillChatRightQuoteFill size={"7.2vmin"} className={styles.quoteIcon} />
 
-                                <div className={styles.centerBox}>
-                                    <p className={styles.reko}>Sam was an exceptional student during his time at Fullstack Academy, consistently demonstrating a high level of intelligence and work ethic.</p>
+                                    <div className={styles.centerBox}>
+                                        <p className={styles.reko}>Sam was an exceptional student during his time at Fullstack Academy, consistently demonstrating a high level of intelligence and work ethic.</p>
+                                    </div>
+
                                 </div>
 
-                            </div>
-                        </Scene>
-                    </Controller>
+                            </Scene>
+                        </Controller>
+                    }
 
                     <div className={styles.pictureWrapper}>
                         <img src="headshotAdam.png" className={scrollPosition > 5800 ? styles.headshot : styles.headshotBefore} alt="Adam Marley"></img>
@@ -98,7 +106,7 @@ function Recommendations({ scrollPosition, setScrollPosition }) {
                             <h6 className={styles.jobTitle}>FullStack Developer</h6>
                             {/* <p className={styles.company}>Fullstack Academy</p> */}
                         </div>
-                        <img src="Fabian-headshot.jpg" className={scrollPosition > 7800 ? styles.headshot : styles.headshotBefore} alt="Adam Marley"></img>
+                        <img src="Fabian-headshot.jpg" className={scrollPosition > 8000 ? styles.headshot : styles.headshotBefore} alt="Adam Marley"></img>
                     </div>
                     <Controller>
                         <Scene duration={'173%'} triggerHook={0.3} pin>
@@ -127,7 +135,7 @@ function Recommendations({ scrollPosition, setScrollPosition }) {
                         </Scene>
                     </Controller>
                     <div className={styles.pictureWrapper}>
-                        <img src="headshotAdam.png" className={scrollPosition > 10100? styles.headshot : styles.headshotBefore} alt="Adam Marley"></img>
+                        <img src="headshotAdam.png" className={scrollPosition > 10100 ? styles.headshot : styles.headshotBefore} alt="Adam Marley"></img>
                         <div className={scrollPosition > 10000 ? styles.titleWrapper : styles.disabled}>
                             <h5 className={styles.name}>Adam Marley</h5>
                             <h6 className={styles.jobTitle}>Associate Instuctor/Mentor</h6>
