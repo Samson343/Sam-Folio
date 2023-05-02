@@ -13,7 +13,7 @@ function NavBar ({ rotateBox, setRotateBox, target1Ref, target2Ref, target3Ref }
     
     const handleClick = (scrollHere) => {
         if (window.innerWidth < 600) { 
-            scrollHere = scrollHere * 0.8
+            scrollHere = scrollHere * (window.innerHeight/969)
          }
         window.scrollTo({
           top: scrollHere, // the y-coordinate to scroll to

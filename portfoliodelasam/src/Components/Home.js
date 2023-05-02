@@ -15,7 +15,7 @@ function Home({ setRouteTo, rotateBox, setRotateBox, scrollPosition, setScrollPo
     useEffect(() => {
         function handleScroll() {
             if (window.innerWidth < 600) {
-               setScrollPosition(window.scrollY * 1.28); // Update the scroll position state
+               setScrollPosition(window.scrollY * (969/window.innerHeight)); // Update the scroll position state
                
             }
             else {
