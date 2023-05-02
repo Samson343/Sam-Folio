@@ -15,6 +15,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    /* position: fixed; */
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
@@ -204,6 +205,7 @@
     font-size: calc(2px + 0.8em);
     min-width: fit-content;
     min-height: fit-content;
+    /* margin-bottom: 10px; */
 }
 
 .pictureWrapper {
@@ -259,6 +261,9 @@
     margin-left: 0;
     margin-right: -4vw;
     z-index: 3;
+}
+.titleWrapper:nth-of-type(1){
+    margin-bottom: 0%;
 }
 
 .jobTitle {
@@ -355,15 +360,15 @@
 }
 @-webkit-keyframes focus-in-contract {
   0% {
-      letter-spacing: 1em;
+      /* letter-spacing: 1em;
       -webkit-filter: blur(12px);
-      filter: blur(12px);
+      filter: blur(12px); */
       opacity: 0;
   }
 
   100% {
-      -webkit-filter: blur(0px);
-      filter: blur(0px);
+      /* -webkit-filter: blur(0px);
+      filter: blur(0px); */
       opacity: 1;
   }
 }
@@ -481,6 +486,7 @@
         width: 90%;
         margin-top: 10%;
         margin-right: 10%;
+        margin-bottom: 10px;
     }
     .pictureWrapper {
         width: 50%;
@@ -564,7 +570,8 @@
         animation: slide-in-blurred-bottom 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     }
     .fireWrapper {
-        background-attachment:fixed;
+        background-attachment:unset;
+        
        
         z-index: -1;
     }
