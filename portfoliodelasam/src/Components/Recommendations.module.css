@@ -560,4 +560,7 @@
         -webkit-animation: slide-in-blurred-bottom 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
         animation: slide-in-blurred-bottom 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     }
+    .fireWrapper {
+        background-attachment: scroll;
+    }
 }
