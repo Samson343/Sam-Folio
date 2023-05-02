@@ -3,18 +3,26 @@ import styles from './Home.module.css'
 import { Link } from "react-router-dom";
 import { FiGithub } from 'react-icons/fi'
 import { AiFillLinkedin } from 'react-icons/ai'
-
 import { SiCodewars } from 'react-icons/si'
 import About from "./About";
 import Projects from "./Projects";
+import Contact from "./Recommendations";
 
-
-function Home({ setRouteTo, rotateBox, setRotateBox }) {
-    const [scrollPosition, setScrollPosition] = useState(window.scrollY);
+function Home({ setRouteTo, rotateBox, setRotateBox, scrollPosition, setScrollPosition, isVisible, setIsVisible }) {
+    const [mobileScroll, setMobileScroll] = useState(0)
+    
 
     useEffect(() => {
         function handleScroll() {
-            setScrollPosition(window.scrollY); // Update the scroll position state
+            if (window.innerWidth < 600) {
+               setScrollPosition(window.scrollY * 1.28); // Update the scroll position state
+               
+            }
+            else {
+               setScrollPosition(window.scrollY)
+            }
+            
+            
         }
         window.addEventListener('scroll', handleScroll);
         // return () => window.removeEventListener('scroll', handleScroll);
@@ -75,27 +83,29 @@ function Home({ setRouteTo, rotateBox, setRotateBox }) {
   .
   </div>
   <div className={styles.snowflake}>
+    .
   </div>
   <div className={styles.snowflake}>
   .
   </div>
   <div className={styles.snowflake}>
   .
+  </div>
+  <div className={styles.snowflake}>
+  .
+  </div>
+  <div className={styles.snowflake}>
+    .
   </div>
   <div className={styles.snowflake}>
   .
   </div>
   {/* <div className={styles.snowflake}>
+    .
   </div> */}
   {/* <div className={styles.snowflake}>
-  .
+    .
   </div> */}
-  <div className={styles.snowflake}>
-    .
-  </div>
-  <div className={styles.snowflake}>
-    .
-  </div>
   {/* <div className={styles.snowflake}>
     .
   </div>
@@ -185,8 +195,11 @@ function Home({ setRouteTo, rotateBox, setRotateBox }) {
             </div>
             <About
                 scrollPosition={scrollPosition}
+                isVisible = {isVisible} 
+              setIsVisible = {setIsVisible}
             />
-            <Projects />
+          
+            
         </>
     )
 }

@@ -12,6 +12,7 @@
 }
 .numbers {
     font-family: var(--font-mono);
+
     color: var(--electricgreen);
     font-size: calc(8px + 0.7vmin);
     margin-left: 10px;

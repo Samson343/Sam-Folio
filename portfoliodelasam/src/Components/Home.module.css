@@ -264,10 +264,12 @@
     font-family: 'Open Sans', sans-serif;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     /* font-family:'Open Sans'; */
-    font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+    /* font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif; */
+    font-family: 'Open Sans';
     /* font-family: 'Proxima Nova', sans-serif;
     font-family: 'Lato', sans-serif; */
     font-size: calc(7px + 2.8vmin);
+    
     /* text-shadow:  0.5px 0.5px 0.5px var(--electricgreen); */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -279,7 +281,7 @@
     width: 63%;
     color: var(--dark-slate);
     /* font-family: var(--font-sans); */
-    /* font-family:'Open Sans'; */
+    font-family:'Open Sans';
     /* font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif; */
     /* font-family: var(--font-mono); */
     font-size: calc(6.5px + 0.83vmin);
@@ -298,7 +300,7 @@
     /* font-family: var(--font-sans);
     font-family: var(--font-mono); */
     /* font-family:'Open Sans'; */
-    font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+    /* font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif; */
     -webkit-animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
     animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
 }
@@ -646,13 +648,13 @@ body::-webkit-scrollbar-track-piece {
 }
 
 .snowflake:nth-of-type(2) {
-    left: 5%;
+    left: 30%;
     -webkit-animation-delay: 6s, .5s;
     animation-delay: 6s, .5s
 }
 
 .snowflake:nth-of-type(3) {
-    left: 6%;
+    left: 5%;
     -webkit-animation-delay: 4s, 2s;
     animation-delay: 4s, 2s
 }
@@ -670,36 +672,36 @@ body::-webkit-scrollbar-track-piece {
 }
 
 .snowflake:nth-of-type(6) {
-    left: 90%;
-    -webkit-animation-delay: 6s, 2s;
-    animation-delay: 6s, 2s
+    left: 70%;
+    -webkit-animation-delay: 6.7s, 2s;
+    animation-delay: 6.7s, 2s
 }
 
 .snowflake:nth-of-type(7) {
-    left: 70%;
+    left: 55%;
     -webkit-animation-delay: 2.5s, 1s;
     animation-delay: 2.5s, 1s
 }
 
 .snowflake:nth-of-type(8) {
-    left: 80%;
+    left: 86%;
     -webkit-animation-delay: 1s, 0s;
     animation-delay: 1s, 0s
 } 
 
-/* .snowflake:nth-of-type(9) {
+.snowflake:nth-of-type(9) {
     left: 90%;
     -webkit-animation-delay: 3s, 1.5s;
     animation-delay: 3s, 1.5s
 }
 
 .snowflake:nth-of-type(10) {
-    left: 25%;
+    left: 74%;
     -webkit-animation-delay: 2s, 0s;
     animation-delay: 2s, 0s
 }
 
-.snowflake:nth-of-type(11) {
+/* .snowflake:nth-of-type(11) {
     left: 31%;
     -webkit-animation-delay: 4s, 2.5s;
     animation-delay: 4s, 2.5s
@@ -736,13 +738,13 @@ body::-webkit-scrollbar-track-piece {
     left: 65%;
     -webkit-animation-delay: 4s, 2.5s;
     animation-delay: 4s, 2.5s
-}
+} */
 /* .snowflake:nth-of-type(19) {
     left: 90%;
     -webkit-animation-delay: 4s, 2.5s;
     animation-delay: 4s, 2.5s
 } */
-.snowflake:nth-of-type(20) {
+/* .snowflake:nth-of-type(20) {
     left: 28%;
     -webkit-animation-delay: 4s, 2.5s;
     animation-delay: 4s, 2.5s
@@ -786,12 +788,15 @@ body::-webkit-scrollbar-track-piece {
     left: 1%;
     -webkit-animation-delay: 4s, 2.5s;
     animation-delay: 4s, 2.5s
-}
+} */
 
 @media (max-width: 600px) {
    .snowflake:nth-of-type(8) {
     left: 40%;
 } 
+.snowflake {
+    font-size: 1em;
+}
 
  .snowflake:nth-of-type(9) {
     left: 63%;
@@ -859,4 +864,11 @@ body::-webkit-scrollbar-track-piece {
   .homeRoot {
     border-bottom: none;
   }
+  .snowflake:nth-of-type(7) {
+    /* display: none; */
+}
+
+.snowflake:nth-of-type(3) {
+    display: none;
+} 
   }

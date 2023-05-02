@@ -8,7 +8,43 @@
   display: flex;
   justify-content: center;
   min-height: fit-content;
+  /* -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+          animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
+  /* -webkit-animation: slide-in-blurred-bottom 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) forwards;
+	        animation: slide-in-blurred-bottom 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) forwards; */
+          -webkit-animation: focus-in-contract 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s both;
+    animation: focus-in-contract 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s both;
 }
+@keyframes focus-in-contract {
+  0% {
+      /* letter-spacing: 0.3em; */
+      /* -webkit-filter: blur(12px); */
+      /* filter: blur(12px); */
+      opacity: 0;
+  }
+
+  100% {
+      /* -webkit-filter: blur(0px); */
+      /* filter: blur(0px); */
+      opacity: 1;
+  }
+}
+@-webkit-keyframes focus-in-contract {
+  0% {
+      letter-spacing: 1em;
+      -webkit-filter: blur(12px);
+      filter: blur(12px);
+      opacity: 0;
+  }
+
+  100% {
+      -webkit-filter: blur(0px);
+      filter: blur(0px);
+      opacity: 1;
+  }
+}
+
+
 .aboutBackground {
   background-color: rgb(74, 86, 112, 0.6);
   position: absolute;
@@ -101,7 +137,7 @@
 .aboutPicture {
   object-fit: cover;
   width: 9%;
-  min-width: calc(60px + 6.5vmax);
+  min-width: calc(50px + 6.5vmax);
   position: absolute;
   /* margin-left: 64vw; */
   margin-left: 43%;
@@ -123,6 +159,8 @@
   font-family: var(--font-mono);
   color: var(--slate);
   font-size: calc(8px + 1.1vmin);
+  
+  
 }
 .aboutHeaderWrapper {
   position: absolute;
@@ -140,6 +178,8 @@
   border-radius: 5%;
   background-color: var(--dark-navy);
   background-color: rgb(2, 2, 14);
+  -webkit-animation: focus-in-contract 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s both;
+    animation: focus-in-contract 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s both;
 }
 .innerHeader {
   border-bottom: 1px solid var(--slate);
@@ -203,11 +243,14 @@
   margin-top: 27.5vh;
   width: 65%;
   border-color: var(--dark-slate);
+  -webkit-animation: focus-in-contract 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s both;
+    animation: focus-in-contract 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s both;
 }
 .li::before {
   content: "▹";
   color: var(--electricgreen);
   margin-right: 5px;
+  
 }
 .li {
   margin-top: 2.5px;
