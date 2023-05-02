@@ -561,6 +561,12 @@
         animation: slide-in-blurred-bottom 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     }
     .fireWrapper {
-        background-attachment: scroll;
+        background-attachment:fixed;
+       
+        z-index: -1;
+    }
+    .megaWrapper {
+        position: absolute;
+        z-index: 5;
     }
 }
