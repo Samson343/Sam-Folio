@@ -151,7 +151,8 @@
 .headshotBefore {
     border-radius: 50%;
     opacity: 1;
-    height: 26vmin;
+    height: 26vh;
+    /* width: 26vw; */
     border-bottom: 2px solid var(--dark-slate-transparent);
     object-fit: cover;
     margin-bottom: 5px;
@@ -163,7 +164,8 @@
     z-index: 1;
     border-radius: 50%;
     opacity: 90%;
-    height: 26vmin;
+    /* width: 26vw; */
+    height: 26vh;
     border-bottom: 1px solid var(--dark-slate-transparent);
     box-shadow: 2px 2px 5px 1px var(--dark-slate-transparent);
     object-fit: cover;
@@ -449,10 +451,12 @@
     .centerBox {
         width: 90%;
         margin-top: 10%;
+        padding-top: 5%;
         margin-left: 10%;
+        overflow-y: hidden;
     }
     .centerWrapper1 {
-        width: 90vw;
+        width: 50%;
         
         height: 25vh;
         color: pink;
@@ -466,7 +470,7 @@
     
     }
     .centerWrapperMid {
-        width: 90vw;
+        width: 50%;
         
         height: 25vh;
         color: pink;
@@ -487,6 +491,7 @@
         border-radius: 50%;
         opacity: 1;
         height: 40vmin;
+        width: 40vmin;
         border-bottom: 2px solid var(--dark-slate-transparent);
         object-fit: cover;
         margin-bottom: 5px;
@@ -499,12 +504,60 @@
         border-radius: 50%;
         opacity: 90%;
         height: 40vmin;
+        width: 40vmin;
         border-bottom: 1px solid var(--dark-slate-transparent);
         box-shadow: 2px 2px 5px 1px var(--dark-slate-transparent);
         object-fit: cover;
-        margin-bottom: 5px;
+        margin-bottom: 1vh;
         mix-blend-mode: normal;
         transition: mix-blend-mode 0.5s;
     }
+    .titleWrapper {
+        color: var(--light-slate);
+        /* background-color: rgb(0, 0, 0, 0.3); */
+        display: flex;
+        flex-direction: column;
+        overflow-y: hidden;
+        margin-bottom: -14%;
+        right: 20px;
+        z-index: 3;
+        position: absolute;
+        width: 38vw;
+    }
+    .titleWrapperMid {
+        color: var(--light-slate);
+        display: flex;
+        flex-direction: column;
+        overflow-y: hidden;
+        margin-bottom: -8%;
+        left: 20px;
+        z-index: 3;
+        position: absolute;
+    }
     
+    .jobTitle {
+        font-family: var(--font-mono);
+        margin: 0;
+    
+        -webkit-animation: slide-in-blurred-bottom 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.2s both;
+        animation: slide-in-blurred-bottom 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.2s both;
+    
+    }
+    
+    .company {
+        font-family: var(--font-mono);
+        font-size: calc(8px + 1.05vmin);
+        margin: 0;
+        -webkit-animation: slide-in-blurred-bottom 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.3s both;
+        animation: slide-in-blurred-bottom 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.3s both;
+    }
+    
+    .name {
+        font-family: var(--font-sans);
+        font-size: calc(7px + 1.05vmin);
+        margin-bottom: 4px;
+        border-bottom: 1px solid var(--electricgreen);
+        -webkit-animation: slide-in-blurred-bottom 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: slide-in-blurred-bottom 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
 }

@@ -101,7 +101,7 @@ function Recommendations({ scrollPosition, setScrollPosition }) {
                 </div>
                 <div className={styles.backgroundOpacifier}>
                     <div className={styles.pictureWrapperMid}>
-                        <div className={scrollPosition > 7500 ? styles.titleWrapperMid : styles.disabled}>
+                        <div className={scrollPosition > 7700 ? styles.titleWrapperMid : styles.disabled}>
                             <h5 className={styles.name}>Fabian Hernandez</h5>
                             <h6 className={styles.jobTitle}>FullStack Developer</h6>
                             {/* <p className={styles.company}>Fullstack Academy</p> */}
@@ -135,11 +135,11 @@ function Recommendations({ scrollPosition, setScrollPosition }) {
                         </Scene>
                     </Controller>
                     <div className={styles.pictureWrapper}>
-                        <img src="headshotAdam.png" className={scrollPosition > 10100 ? styles.headshot : styles.headshotBefore} alt="Adam Marley"></img>
+                        <img src="about-Sam3.jpg" className={scrollPosition > 10000 ? styles.headshot : styles.headshotBefore} alt="Adam Marley"></img>
                         <div className={scrollPosition > 10000 ? styles.titleWrapper : styles.disabled}>
-                            <h5 className={styles.name}>Adam Marley</h5>
-                            <h6 className={styles.jobTitle}>Associate Instuctor/Mentor</h6>
-                            <p className={styles.company}>Fullstack Academy</p>
+                            <h5 className={styles.name}>Sam Banister</h5>
+                            <h6 className={styles.jobTitle}>Fullstack Engineer</h6>
+                            <p className={styles.company}>@ your company</p>
                         </div>
                     </div>
                 </div>

@@ -382,9 +382,7 @@
     .projectDescription {
       width: 80%;
     }
-    .screenshot {
-      object-fit:cover
-    }
+    
   
     .projectDescription {
       font-size: calc(5.5px + 1.05vmin);

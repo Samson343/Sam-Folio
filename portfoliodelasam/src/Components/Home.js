@@ -9,11 +9,19 @@ import Projects from "./Projects";
 import Contact from "./Recommendations";
 
 function Home({ setRouteTo, rotateBox, setRotateBox, scrollPosition, setScrollPosition, isVisible, setIsVisible }) {
+    const [mobileScroll, setMobileScroll] = useState(0)
     
 
     useEffect(() => {
         function handleScroll() {
-            setScrollPosition(window.scrollY); // Update the scroll position state
+            if (window.innerWidth < 600) {
+               setScrollPosition(window.scrollY * 1.28); // Update the scroll position state
+               
+            }
+            else {
+               setScrollPosition(window.scrollY)
+            }
+            
             
         }
         window.addEventListener('scroll', handleScroll);
