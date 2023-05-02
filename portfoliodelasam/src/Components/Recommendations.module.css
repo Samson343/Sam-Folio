@@ -164,7 +164,7 @@
     z-index: 1;
     border-radius: 50%;
     opacity: 90%;
-    /* width: 26vw; */
+    /* width: 250px; */
     height: 26vh;
     border-bottom: 1px solid var(--dark-slate-transparent);
     box-shadow: 2px 2px 5px 1px var(--dark-slate-transparent);
@@ -472,7 +472,7 @@
     .centerWrapperMid {
         width: 50%;
         
-        height: 25vh;
+        height: 28vh;
         color: pink;
         /* background-color: red; */
         /* border: 1px solid white; */
@@ -494,7 +494,7 @@
         width: 40vmin;
         border-bottom: 2px solid var(--dark-slate-transparent);
         object-fit: cover;
-        margin-bottom: 5px;
+        margin-bottom: 1vh;
         mix-blend-mode: luminosity;
         box-shadow: 2px 2px 5px 1px var(--dark-slate-transparent);
     }
@@ -533,6 +533,9 @@
         left: 20px;
         z-index: 3;
         position: absolute;
+    }
+    .titleWrapper:nth-of-type(1){
+        margin-bottom: -12%;
     }
     
     .jobTitle {

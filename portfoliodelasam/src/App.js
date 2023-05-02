@@ -13,12 +13,31 @@ import Projects from './Components/Projects';
 
 function App() {
   const [ routeTo, setRouteTo ] = useState('')
-  const [rotateBox, setRotateBox] = useState(false)
-  const [scrollPosition, setScrollPosition] = useState(window.scrollY);
   
-  const target1Ref = useRef(null);
-  const target2Ref = useRef(null);
-  const target3Ref = useRef(null);
+  const [scrollPosition, setScrollPosition] = useState(window.scrollY);
+  const [rotateBox, setRotateBox] = useState(false)
+
+
+
+  // useEffect(() => {
+  //   function handleResize() {
+  //     setViewportWidth(window.innerWidth);
+  //     console.log("this is viewportWidth", viewportWidth)
+  //   }
+
+  //   window.addEventListener('resize', handleResize);
+  //   return () => {
+  //     window.removeEventListener('resize', handleResize);
+  //   };
+  // }, []);
+
+ 
+  
+
+
+
+
+  
 
 
   return (
@@ -37,7 +56,7 @@ function App() {
           <>
             <About
               setRouteTo={ setRouteTo }
-              ref = {target1Ref}
+              
             />
           </>
           } 
@@ -45,11 +64,8 @@ function App() {
         <Route exact path='/' element={
           <>
            <NavBar
-             rotateBox= { rotateBox }
-             setRotateBox= { setRotateBox }
-             target1Ref = {target1Ref}
-             target2Ref = {target2Ref}
-             target3Ref = {target2Ref}
+           
+            
            />
             <Home
               setRouteTo={ setRouteTo }
