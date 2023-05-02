@@ -2,7 +2,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     /* border: 1px solid white */
-    overflow-x: hidden
+    /* overflow-x: hidden */
 }
 
 .homeRoot {
@@ -855,7 +855,7 @@ body::-webkit-scrollbar-track-piece {
   .bottomHr {
     display: inline;
     bottom:-1px;
-    width: 100%;
+    width: 99.5%;
     position: absolute;
     border: 0.5px solid var(--dark-slate);
     margin: 0;

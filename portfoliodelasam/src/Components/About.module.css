@@ -136,13 +136,13 @@
 } */
 .aboutPicture {
   object-fit: cover;
-  width: 9%;
+  width: 11.5%;
   min-width: calc(50px + 6.5vmax);
   position: absolute;
   /* margin-left: 64vw; */
   margin-left: 43%;
   /* right: 0; */
-  margin-top: 26.5vh;
+  margin-top: 30.5vh;
   border-radius: 3.5px;
   opacity: 0.97;
   box-shadow: 3px 3px var(--dark-slate);
@@ -151,7 +151,7 @@
 .aboutPicture:hover {
   box-shadow: 1px 1px var(--dark-slate);
   margin-left: 43.3%;
-  margin-top: 26.9vh;
+  margin-top: 30vh;
 }
 .aboutHeader {
   color: var(--fontColor);
@@ -304,12 +304,13 @@
       margin-top: 10%;
     }
     .aboutPicture {
-      margin-top: 45vh;
-      margin-left: 55%;
+      margin-top: 46vh;
+      margin-left: 47%;
+      width: 38%;
     }
     .aboutPicture:hover {
-      margin-top: 45.3vh;
-      margin-left: 55.5%;
+      margin-top: 46vh;
+      margin-left: 47%;
     }
     .title {
       margin-top: 13.5vmin;
@@ -334,6 +335,7 @@
       width: 80%;
       margin-top: 24.5vh;
     }
+    
     
 
   

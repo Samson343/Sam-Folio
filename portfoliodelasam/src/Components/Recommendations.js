@@ -136,7 +136,7 @@ function Recommendations({ scrollPosition, setScrollPosition }) {
                             </Scene>
                         </Controller>
                         <div className={styles.pictureWrapper}>
-                            <img src="about-Sam3.jpg" className={scrollPosition > 10000 ? styles.headshot : styles.headshotBefore} alt="Adam Marley"></img>
+                            <img src="SamHeadshot.jpg" className={scrollPosition > 10000 ? styles.headshot : styles.headshotBefore} alt="Adam Marley"></img>
                             <div className={scrollPosition > 10000 ? styles.titleWrapper : styles.disabled}>
                                 <h5 className={styles.name}>Sam Banister</h5>
                                 <h6 className={styles.jobTitle}>Fullstack Engineer</h6>
