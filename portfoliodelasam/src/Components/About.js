@@ -22,7 +22,7 @@ function About({ setRouteTo, scrollPosition }) {
             {
                 root: null,
                 rootMargin: "0px",
-                threshold: 0.7, // Trigger when half of the element is visible
+                threshold: 0.6, // Trigger when half of the element is visible
             }
         );
 

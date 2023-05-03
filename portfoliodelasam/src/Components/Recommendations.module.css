@@ -15,6 +15,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    /* position: fixed; */
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
@@ -59,6 +60,8 @@
     /* border: 1px solid white; */
     display: flex;
     justify-content: right;
+    
+    
     /* align-items: flex-end; */
     /* padding-right: 2%; */
 }
@@ -111,7 +114,7 @@
     /* margin-right: 18%; */
     color: white;
     font-family: var(--font-mono);
-    font-size: calc(5px + 1.05vmin);
+    font-size: calc(5px + 1vmin);
     border-radius: 4%;
     /* height: 40px;
     width: 50px; */
@@ -135,7 +138,7 @@
     /* margin-right: 18%; */
     color: white;
     font-family: var(--font-mono);
-    font-size: calc(5px + 1.05vmin);
+    font-size: calc(5px + 1vmin);
     border-radius: 4%;
     /* border-right: 7px solid var(--navy); */
 
@@ -146,6 +149,7 @@
     /* box-shadow: 2px 2px 2px 1px rgb(33, 33, 33); */
     box-shadow: 2px 2px 2px var(--light-slate);
     margin-bottom: 5px;
+    overflow-y: hidden;
 }
 
 .headshotBefore {
@@ -204,6 +208,7 @@
     font-size: calc(2px + 0.8em);
     min-width: fit-content;
     min-height: fit-content;
+    /* margin-bottom: 10px; */
 }
 
 .pictureWrapper {
@@ -259,6 +264,9 @@
     margin-left: 0;
     margin-right: -4vw;
     z-index: 3;
+}
+.titleWrapper:nth-of-type(1){
+    margin-bottom: 0%;
 }
 
 .jobTitle {
@@ -355,15 +363,15 @@
 }
 @-webkit-keyframes focus-in-contract {
   0% {
-      letter-spacing: 1em;
+      /* letter-spacing: 1em;
       -webkit-filter: blur(12px);
-      filter: blur(12px);
+      filter: blur(12px); */
       opacity: 0;
   }
 
   100% {
-      -webkit-filter: blur(0px);
-      filter: blur(0px);
+      /* -webkit-filter: blur(0px);
+      filter: blur(0px); */
       opacity: 1;
   }
 }
@@ -388,6 +396,9 @@
     position: absolute;
     -webkit-animation: focus-in-contract 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s both;
     animation: focus-in-contract 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s both;
+}
+.mobile {
+  /* display: none;        */
 }
 
 /* .recoHr {
@@ -481,6 +492,7 @@
         width: 90%;
         margin-top: 10%;
         margin-right: 10%;
+        margin-bottom: 10px;
     }
     .pictureWrapper {
         width: 50%;
@@ -564,9 +576,15 @@
         animation: slide-in-blurred-bottom 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     }
     .fireWrapper {
-        background-attachment:fixed;
-       
+        background-image:none;
         z-index: -1;
+    }
+    .mobile {
+        /* display:initial; */
+        /* height: 100vh;
+        position: absolute;
+        object-fit: cover; */
+        
     }
     .megaWrapper {
         position: absolute;
