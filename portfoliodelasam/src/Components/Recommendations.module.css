@@ -283,6 +283,7 @@
     margin: 0;
     -webkit-animation: slide-in-blurred-bottom 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.3s both;
     animation: slide-in-blurred-bottom 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.3s both;
+    font-size: calc(6px + 1.05vmin);
 }
 
 .name {
@@ -576,7 +577,7 @@
         animation: slide-in-blurred-bottom 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     }
     .fireWrapper {
-        background-image:none;
+        /* background-image:none; */
         z-index: -1;
     }
     .mobile {

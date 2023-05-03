@@ -17,6 +17,7 @@
     margin-left: 22%;
     color: var(--electricgreen);
     left: 0;
+    font-size: calc(6px + 1vmin);
     /* max-width: 19em; */
     font-family: var(--font-mono);
     overflow: hidden;
@@ -143,7 +144,34 @@
     align-items: center;
     margin-top: 0;
     transition: background-color 0.35s;
+    -webkit-animation: pulse 0.6s both;
+    animation: pulse 0.6s backwards;
 }
+
+@-webkit-keyframes pulse {
+
+    0%,
+    100% {
+        background-color: none;
+    }
+    
+    50% {
+        background-color: var(--electricgreen);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        background-color: none;
+    }
+
+    100% {
+        background-color: var(--electricgreen);
+    }
+
+    
+}
+
 
 .box:hover {
     background-color: var(--electricgreen);
