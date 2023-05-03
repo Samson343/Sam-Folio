@@ -68,7 +68,7 @@ function Recommendations({ scrollPosition, setScrollPosition }) {
                                         <BsFillChatRightQuoteFill size={"7.2vmin"} className={styles.quoteIcon} />
 
                                         <div className={styles.centerBox}>
-                                            <p className={styles.reko}>Sam was an exceptional student during his time at Fullstack Academy, consistently demonstrating a high level of intelligence and work ethic.</p>
+                                            <p className={styles.reko1}>Sam was an exceptional student during his time at Fullstack Academy, consistently demonstrating a high level of intelligence and work ethic.</p>
                                         </div>
 
                                     </div>
