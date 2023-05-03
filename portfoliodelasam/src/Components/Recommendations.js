@@ -40,10 +40,11 @@ function Recommendations({ scrollPosition, setScrollPosition }) {
 
     return (
         <div className={styles.contactRoot} ref={ref}>
-
+           
 
             <div className={styles.fireWrapper}>
-              
+
+                {/* <img className={styles.mobile} src={"campfire3.png"} alt=""></img>   */}
                     {isVisible &&
                         <>
                             <div className={styles.aboutHeaderWrapper}>
@@ -115,7 +116,7 @@ function Recommendations({ scrollPosition, setScrollPosition }) {
                                     <BsChatLeftQuote size={"7.2vmin"} className={styles.quoteIconMid} />
 
                                     <div className={styles.centerBoxMid}>
-                                        <p className={styles.rekoMid} >Sam always stood out as a talented developer as he was constantly going above and beyond what we covered in our course by exploring and implementing new technologies and techniques whenever possible.</p>
+                                        <p className={styles.rekoMid} >Sam always stood out as a talented developer, constantly going above and beyond what we covered in our course by exploring and implementing new technologies and techniques whenever possible.</p>
                                     </div>
                                 </div>
                             </Scene>
