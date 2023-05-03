@@ -14,14 +14,18 @@ function Home({ setRouteTo, rotateBox, setRotateBox, scrollPosition, setScrollPo
 
     useEffect(() => {
         function handleScroll() {
-            if (window.innerWidth < 600) {
+            // if (window.innerWidth < 600) {
+            //     // setScrollPosition(window.scrollY * (969/window.screen.height) - 75);
+            // setScrollPosition(window.scrollY * (969/window.innerHeight) - 75); // Update the scroll position state
+               
+            // }
+            // else {
+            //    setScrollPosition(window.scrollY)
+            // }
+            
                 // setScrollPosition(window.scrollY * (969/window.screen.height) - 75);
             setScrollPosition(window.scrollY * (969/window.innerHeight) - 75); // Update the scroll position state
                
-            }
-            else {
-               setScrollPosition(window.scrollY)
-            }
             
             
         }
