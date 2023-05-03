@@ -200,7 +200,13 @@
     font-size: calc(2px + 0.8em);
     padding-right: 20px;
     margin-bottom: 40px;
-
+}
+.reko1{
+    border-right: 1px solid var(--light-slate);
+    font-size: calc(2px + 0.8em);
+    padding-right: 20px;
+    margin-bottom: 40px;
+    padding-top: 15px;
 }
 .rekoMid {
     border-left: 1px solid var(--light-slate);
