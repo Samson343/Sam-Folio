@@ -79,9 +79,9 @@ function Recommendations({ scrollPosition, setScrollPosition }) {
                         }
 
                         <div className={styles.pictureWrapper}>
-                            <img src="headshotAdam.png" className={scrollPosition > 5800 ? styles.headshot : styles.headshotBefore} alt="Adam Marley"></img>
+                            <img src="headshotAdam.png" className={scrollPosition > 5800 ? styles.headshot : styles.headshotBefore} alt="Adam Marey"></img>
                             <div className={scrollPosition > 5800 ? styles.titleWrapper : styles.disabled}>
-                                <h5 className={styles.name}>Adam Marley</h5>
+                                <h5 className={styles.name}>Adam Marey</h5>
                                 <h6 className={styles.jobTitle}>Associate Instuctor/Mentor</h6>
                                 <p className={styles.company}>Fullstack Academy</p>
                             </div>
@@ -109,7 +109,7 @@ function Recommendations({ scrollPosition, setScrollPosition }) {
                                 <h6 className={styles.jobTitle}>FullStack Developer</h6>
                                 {/* <p className={styles.company}>Fullstack Academy</p> */}
                             </div>
-                            <img src="Fabian-headshot.jpg" className={scrollPosition > 8000 ? styles.headshot : styles.headshotBefore} alt="Adam Marley"></img>
+                            <img src="Fabian-headshot.jpg" className={scrollPosition > 8000 ? styles.headshot : styles.headshotBefore} alt="Fabian"></img>
                         </div>
                         <Controller>
                             <Scene duration={'173%'} triggerHook={0.3} pin>
@@ -138,7 +138,7 @@ function Recommendations({ scrollPosition, setScrollPosition }) {
                             </Scene>
                         </Controller>
                         <div className={styles.pictureWrapper}>
-                            <img src="SamHeadshot.jpg" className={scrollPosition > 10000 ? styles.headshot : styles.headshotBefore} alt="Adam Marley"></img>
+                            <img src="SamHeadshot.jpg" className={scrollPosition > 10000 ? styles.headshot : styles.headshotBefore} alt="Sam"></img>
                             <div className={scrollPosition > 10000 ? styles.titleWrapper : styles.disabled}>
                                 <h5 className={styles.name}>Sam Banister</h5>
                                 <h6 className={styles.jobTitle}>Fullstack Engineer</h6>
