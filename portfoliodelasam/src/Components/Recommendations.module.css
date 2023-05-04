@@ -405,7 +405,7 @@
     animation: focus-in-contract 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s both;
 }
 .mobile {
-  /* display: none;        */
+  display: none;       
 }
 
 /* .recoHr {
@@ -583,16 +583,27 @@
         animation: slide-in-blurred-bottom 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     }
     .fireWrapper {
-        /* background-image:none; */
-        z-index: -1;
+        background-image:none;
+        z-index: -2;
+    
     }
     .mobile {
-        /* display:initial; */
-        /* height: 100vh;
-        position: absolute;
-        object-fit: cover; */
+        display:initial; 
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        object-fit: cover;
+        z-index: -1;
+        top: 0;
+        left: 0;
+    }
+    .contactRoot {
+        background-color:unset
+    }
+    .backgroundOpacifier {
         
     }
+
     .megaWrapper {
         position: absolute;
         z-index: 5;

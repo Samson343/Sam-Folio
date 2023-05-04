@@ -43,8 +43,9 @@ function Recommendations({ scrollPosition, setScrollPosition }) {
            
 
             <div className={styles.fireWrapper}>
-
-                {/* <img className={styles.mobile} src={"campfire3.png"} alt=""></img>   */}
+               
+                
+                
                     {isVisible &&
                         <>
                             <div className={styles.aboutHeaderWrapper}>
@@ -59,7 +60,7 @@ function Recommendations({ scrollPosition, setScrollPosition }) {
                         </>
                     }
                     <div className={styles.backgroundOpacifier}>
-
+                    <img className={styles.mobile} src={"campfire3.png"} alt=""></img>  
                         {isVisible &&
                             <Controller>
                                 <Scene duration={'173%'} triggerHook={0.3} pin className={styles.scrollContainer}>

@@ -39,8 +39,9 @@ function About({ setRouteTo, scrollPosition }) {
 
     return (
         <div className={styles.aboutRoot} ref={ref} >
-            <div >
-            {isVisible &&
+             {isVisible &&
+            <div className={styles.fadeIn}>
+           
                 <>
                     <div className={styles.aboutHeaderWrapper}>
                         <h3 className={styles.aboutHeader}>
@@ -87,7 +88,7 @@ function About({ setRouteTo, scrollPosition }) {
                         <div className={styles.aboutPictureBackground}></div>
                     </div>
                 </>
-            }
+            
 
             {scrollPosition >= 700 &&
                 <img className={styles.flowerImage2} src="flowerVine2.png" alt="white flowers"></img>
@@ -100,6 +101,7 @@ function About({ setRouteTo, scrollPosition }) {
               > Go home </button>
             </Link> */}
             </div>
+            }
         </div>
 
 
