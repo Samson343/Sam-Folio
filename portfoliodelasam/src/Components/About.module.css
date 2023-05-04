@@ -8,7 +8,10 @@
   display: flex;
   justify-content: center;
   min-height: fit-content;
-    -webkit-animation: focus-in-contract 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s both;
+    
+}
+.fadeIn {
+ -webkit-animation: focus-in-contract 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s both;
     animation: focus-in-contract 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s both;
 }
 
@@ -146,8 +149,7 @@
   border-radius: 5%;
   background-color: var(--dark-navy);
   background-color: rgb(2, 2, 14);
-  -webkit-animation: focus-in-contract 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s both;
-    animation: focus-in-contract 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s both;
+  
 }
 .innerHeader {
   border-bottom: 1px solid var(--slate);

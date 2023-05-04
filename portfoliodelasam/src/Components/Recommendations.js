@@ -43,7 +43,8 @@ function Recommendations({ scrollPosition, setScrollPosition }) {
            
 
             <div className={styles.fireWrapper}>
-
+               
+                
                 {/* <img className={styles.mobile} src={"campfire3.png"} alt=""></img>   */}
                     {isVisible &&
                         <>
