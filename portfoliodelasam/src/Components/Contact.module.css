@@ -202,7 +202,7 @@
 .snowflake {
     color: #fff;
     color: var(--lightest-slate);
-    font-size: 1.05em;
+    font-size: 1.1em;
     font-family: Arial, sans-serif;
     text-shadow: 0 0 5px #000;
     -webkit-animation: snowflakes-fall both;
@@ -413,6 +413,9 @@
 
 
 @media (max-width: 600px) {
+    .snowflake {
+
+    }
     .centerBox {
         width: 80%;
         height: 40vh 

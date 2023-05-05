@@ -560,7 +560,7 @@ body::-webkit-scrollbar-track-piece {
 .snowflake {
     color: #fff;
     color: var(--lightest-slate);
-    font-size: 1em;
+    font-size: 1.1em;
     font-family: Arial, sans-serif;
     text-shadow: 0 0 5px #000;
     -webkit-animation: snowflakes-fall both;
