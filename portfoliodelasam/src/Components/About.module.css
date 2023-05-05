@@ -334,6 +334,10 @@
       width: 80%;
       margin-top: 24.5vh;
     }
+    .fadeIn {
+      -webkit-animation:none;
+        animation: focus-in-contract 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s both;
+    }
     
     
 
