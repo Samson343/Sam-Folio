@@ -21,7 +21,7 @@ function Projects() {
             {
                 root: null,
                 rootMargin: "0px",
-                threshold: 0.15, // Trigger when half of the element is visible
+                threshold: 0.25, // Trigger when half of the element is visible
             }
         );
 
