@@ -177,7 +177,7 @@ function Home({ setRouteTo, rotateBox, setRotateBox, scrollPosition, setScrollPo
  <hr className={styles.bottomHr}></hr>
  <div className={styles.bottomRightWrapper}>
                     {/* <span className={styles.email}>sam.ban@gmail.com</span> */}
-                    <a rel = "noreferrer" href={"https:www.github.com/Samson343"} target="_blank" className={styles.slideInBottom}>
+                    <a rel = "noreferrer" href={"https://www.github.com/Samson343"} target="_blank" className={styles.slideInBottom}>
                     <FiGithub className={`${styles.socialIcons}`} 
                     
                     size={'2.2vh'} 

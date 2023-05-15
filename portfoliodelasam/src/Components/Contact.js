@@ -28,7 +28,7 @@ function Contact() {
 
                 <div className={styles.aBoxForBoxes}>
                    
-                        <a rel="noreferrer" href={"https:www.github.com/Samson343"} target="_blank" className={styles.box}>
+                        <a rel="noreferrer" href={"https://www.github.com/Samson343"} target="_blank" className={styles.box}>
                             <FiGithub className={`${styles.socialIcons}`}
 
                                 size={'2.2vh'}
