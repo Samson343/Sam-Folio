@@ -2,6 +2,8 @@ import React, {useEffect, useState} from "react";
 import styles from './LoadingMain.module.css'
 import { Navigate } from "react-router";
 
+//this component was not included with the final deployment, but it was a joy to build so I'm keeping it for future projects
+
 
 function LoadingMain ({ routeTo, setRouteTo }) {
    const [rollOut, setRollOut] = useState(false)
@@ -23,8 +25,8 @@ function LoadingMain ({ routeTo, setRouteTo }) {
         <span className={ rollOut ? `${styles.loadingBarLeft} ${styles.roll} ${styles.leftBarAfter}` : `${styles.loadingBarLeft} ${styles.flip}` }> </span>
 
        <img className={ rollOut ? `${styles.image} ${styles.imageAfter} ${styles.roll}` : `${styles.image} ${styles.flip}` } 
-       src = 'Beardboy2.png' 
-       alt = 'me!'
+         src = 'Beardboy2.png' 
+         alt = 'me!'
        >
 
        </img>

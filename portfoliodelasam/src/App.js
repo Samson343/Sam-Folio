@@ -13,67 +13,21 @@ import Projects from './Components/Projects';
 
 function App() {
   const [ routeTo, setRouteTo ] = useState('')
-  
   const [scrollPosition, setScrollPosition] = useState(window.scrollY);
   const [rotateBox, setRotateBox] = useState(false)
-
-
-
-  // useEffect(() => {
-  //   function handleResize() {
-  //     setViewportWidth(window.innerWidth);
-  //     console.log("this is viewportWidth", viewportWidth)
-  //   }
-
-  //   window.addEventListener('resize', handleResize);
-  //   return () => {
-  //     window.removeEventListener('resize', handleResize);
-  //   };
-  // }, []);
-
- 
-  
-
-
-
-
-  
-
 
   return (
     <div className={styles.appRoot}>
       <Routes>
-        <Route path='/loading' element={
-          <>
-            <LoadingMain
-              routeTo = { routeTo }
-              setRouteTo = { setRouteTo }
-            />
-          </>
-          } 
-        />
-        <Route exact path='/about' element={
-          <>
-            <About
-              setRouteTo={ setRouteTo }
-              
-            />
-          </>
-          } 
-        />
         <Route exact path='/' element={
           <>
-           <NavBar
-           
-            
-           />
+           <NavBar/>
             <Home
               setRouteTo={ setRouteTo }
               rotateBox={ rotateBox }
               setRotateBox={ setRotateBox }
               scrollPosition={scrollPosition}
               setScrollPosition={setScrollPosition}
-             
             />
             <Projects/>
             <Recommendations 
@@ -82,7 +36,7 @@ function App() {
             />
             <Contact/>
           </>
-          } 
+        } 
         />
       </Routes>
     </div>

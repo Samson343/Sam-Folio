@@ -3,7 +3,6 @@ import React from "react";
 import styles from './Projects.module.css'
 import { DiPostgresql, DiReact, DiNodejsSmall, DiNodejs, DiBootstrap, DiJavascript1, DiAndroid, DiCss3, DiHtml5, DiJavascript, } from 'react-icons/di'
 import { SiExpress } from "react-icons/si";
-import { Link } from "react-router-dom";
 
 function Projects() {
     const [isVisible, setIsVisible] = useState(false)
@@ -16,7 +15,6 @@ function Projects() {
                     setIsVisible(true);
                     console.log(isVisible)
                 }
-
             },
             {
                 root: null,
@@ -46,13 +44,10 @@ function Projects() {
                             Projects
                         </h3>
                         <span className={styles.projectHeaderLine}></span>
-
                     </div>
                     <hr className={styles.projectHr}></hr>
                 
-            
             <div className={styles.projectWrapper}>
-
 
                 <div className={styles.project1Wrapper}>
 
@@ -64,7 +59,6 @@ function Projects() {
 
                         <div className={styles.techIcons}>
                             <DiReact className={styles.techIcon} />
-
                             <SiExpress className={styles.techIcon} />
                             <DiNodejsSmall className={styles.techIcon} />
                             <DiPostgresql className={styles.techIcon} />
@@ -92,7 +86,6 @@ function Projects() {
                             <DiJavascript1 className={styles.techIcon} />
                             <DiCss3 className={styles.techIcon} />
                             <DiHtml5 className={styles.techIcon} />
-
                         </div>
 
                         <div className={styles.pictureBackground2}>
