@@ -8,7 +8,7 @@ import NavBar from './Components/NavBar'
 import styles from './App.css'
 import Contact from './Components/Contact';
 import Recommendations from './Components/Recommendations';
-import Projects from './Components/Projects';
+import Projects from './Components/Projects'; 
 // import ScrollToElement from './ScrollToElement';
 
 function App() {
