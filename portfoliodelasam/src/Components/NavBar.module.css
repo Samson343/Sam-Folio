@@ -6,8 +6,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    box-shadow:-5px 1px 1px 5px rgba(46, 46, 46, 0.15)
-    
+    box-shadow:-5px 1px 1px 5px rgba(46, 46, 46, 0.2);
+    z-index: 1
     /* background-color: var(--dark-slate-transparent); */
 }
 .numbers {
@@ -18,19 +18,21 @@
     margin-left: 10px;
 }
 .navLink {
-    color: var(--light-slate);
+    color: var(--lightest-slate);
     margin-left: 8px;
     user-select: none;
     text-decoration: none;
-    font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+    /* font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif; */
+    font-family: var(--font-montserrat);
     font-size: calc(8px + 0.65vmin);
     transition: color 0.25s, margin-right 0.25s;
 }
 .navLinkResume {
-    color: var(--light-slate);
+    color: var(--lightest-slate);
     margin-left: 8px;
     user-select: none;
-    font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+    /* font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif; */
+    font-family: var(--font-montserrat);
     font-size: calc(8px + 0.65vmin);
     text-decoration: none;
     transition: color 0.25s, margin-right 0.25s;

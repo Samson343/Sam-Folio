@@ -1,3 +1,21 @@
+.background {
+  background-image: url('../../public/blueBackground7.jpg');
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.backgroundOverlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  background-color: rgb(5, 20, 42, 0.9);
+  mix-blend-mode:hard-light;
+}
+
 .contactRoot {
     min-height: 100vh;
     background-color: var(--primary);
@@ -9,7 +27,7 @@
 }
 
 .title {
-    margin-top: 2vmin;
+    margin-bottom: 40vh;
     position: absolute;
     padding: 1vmin;
     padding-left: 1vmin;
@@ -43,8 +61,11 @@
    
   } */
 .centerBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 1;
-    background-color: var(--primary);
+    background-color: rgb(5, 20, 42, 0.3); 
     height: 50vh;
     width: 40%;
     /* margin-left: 30%; */
@@ -126,19 +147,40 @@
 }
 
 .aBoxForBoxes {
-    margin-top: 15%;
-    margin-left: 15%;
+    margin-top: 5%;
     width: 60%;
     height: 60%;
     display: flex;
+    gap: 10%;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    /* width */
+   &::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: var(--primary);
+  }
+  
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: var(--electricgreen);
+  }
+  
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 }
 
 .box {
     border: 1px solid var(--electricgreen);
-    width: calc(90%/3);
-    height: calc(99%/3);
+    width: 15vmax;
+    height: 5vmax;
+    /* width: calc(90%/3);
+    height: calc(99%/3); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -422,12 +464,12 @@
     }
     .aBoxForBoxes {
         width: 80%;
-        margin-left: 10%;
-        margin-top: 30%;
+        /* margin-left: 10%; */
+        /* margin-top: 30%; */
     }
     .title {
         margin-left: 5%;
-        margin-top: 5vmin;
+        /* margin-top: 5vmin; */
         font-size: calc(7.5px + 1.35vmin);
     }
     .footer {

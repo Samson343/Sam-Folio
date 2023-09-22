@@ -1,8 +1,9 @@
 import { useEffect, useState, useRef } from 'react';
 import React from "react";
 import styles from './Projects.module.css'
-import { DiPostgresql, DiReact, DiNodejsSmall, DiNodejs, DiBootstrap, DiJavascript1, DiAndroid, DiCss3, DiHtml5, DiJavascript, } from 'react-icons/di'
-import { SiExpress } from "react-icons/si";
+import { DiPostgresql, DiReact, DiNodejsSmall, DiBootstrap, DiJavascript1, DiCss3, DiHtml5, DiAngularSimple } from 'react-icons/di'
+import { TbBrandNextjs, TbBrandThreejs } from "react-icons/tb"
+import { SiExpress, SiStrapi } from "react-icons/si";
 
 function Projects() {
     const [isVisible, setIsVisible] = useState(false)
@@ -38,6 +39,8 @@ function Projects() {
         <div ref={ref} className={styles.projectsRoot}>
             {isVisible &&
                 <>
+                    <div className={styles.background}></div>
+                    <div className={styles.backgroundOverlay}></div>
                     <div className={styles.projectHeaderWrapper}>
                         <h3 className={styles.projectHeader}>
                             <span className={styles.numbers}>.02</span >
@@ -46,88 +49,97 @@ function Projects() {
                         <span className={styles.projectHeaderLine}></span>
                     </div>
                     <hr className={styles.projectHr}></hr>
-                
-            <div className={styles.projectWrapper}>
 
-                <div className={styles.project1Wrapper}>
+                    <div className={styles.projectWrapper}>
 
-                    <div className={styles.projectBackground}>
-                        <div className={styles.title}>Hike + Seek Outfitters</div>
-                        <span className={styles.projectDescription}>Our team of 4 built this modern e-commerce application, drawing inspiration from industry leaders like REI and Northface
+                        <div className={styles.project1Wrapper}>
+                            <div className={styles.projectBackground}>
+                                <div className={styles.title}>Shakey Graves - Movie of the Week</div>
 
-                            Features a dynamic cart and account system which allows users to pick up where they left off on different devices, experience a simulated checkout, and track their order history. An admin interface was created for inventory management- such as adding or removing products- in addition to warehouse stock tracking which is stored and persisted for every available product ensuring that orders cannot be created unless they can be fulfilled.</span>
+                                <span className={styles.projectDescription}> Super proud to have contributed to this awesome project at House of Giants for the release of Shakey Graves's new album. He wanted to create something incredibly unique that would allow you to walk away with a one-of-a-kind album that is truly your own.
 
-                        <div className={styles.techIcons}>
-                            <DiReact className={styles.techIcon} />
-                            <SiExpress className={styles.techIcon} />
-                            <DiNodejsSmall className={styles.techIcon} />
-                            <DiPostgresql className={styles.techIcon} />
-                            <DiBootstrap className={styles.techIcon} />
-                            <DiCss3 className={styles.techIcon} />
-                            <DiHtml5 className={styles.techIcon} />
+                                    So with the help of AI and some clever engineering, we helped bring this idea to life - based on a short prompt from the user, the site creates a unique "movie" in that theme.
 
+                                    This means a custom synopsis, title, artwork, and - the most important part - a "soundtrack" which is compiled from a large number of completely unique, alternate versions of songs from the new album.
+
+                                </span>
+
+                                <div className={styles.techIcons}>
+                                    <TbBrandNextjs className={styles.techIcon} />
+                                    <TbBrandThreejs className={styles.techIcon} />
+                                    <SiStrapi className={`${styles.techIcon} ${styles.small}`} />
+                                    <DiCss3 className={styles.techIcon} />
+                                    <DiHtml5 className={styles.techIcon} />
+
+
+                                </div>
+
+                                <div className={styles.pictureBackground}>
+                                    {/* <a className={styles.Link} href="https://super-semolina-b1e7cc.netlify.app/" target="_blank" rel="noreferrer">
+                                        <img className={styles.screenshot} src="strangersThingsScreenshot4.PNG" alt='Connected'></img>
+                                    </a> */}
+                                    <video src="shakey.mp4" type="video/mp4" controls autoPlay loop muted playsInline>
+
+                                    </video>
+                                </div>
+
+                            </div>
                         </div>
 
-                        <div className={styles.pictureBackground}>
-                            <a className={styles.Link} href="https://hike-seek.onrender.com/" target="_blank" rel="noreferrer">
-                                <img className={styles.screenshot} src="hike&seekScreenshot.png" alt='Hike and Seek'></img>
-                            </a>
+                        <div className={styles.project1Wrapper}>
+                            <div className={styles.projectBackground2}>
+                                <div className={styles.titleRight}>Centers for Disease Control</div>
+                                <span className={styles.projectDescription2}>A one-off UI/UX redesign of an existing document search tool at the CDC. The original was well set up in many ways, but it didn't scale well with the ever-growing data set assigned to it, so I was tasked with designing and implementing an entirely new UI for a much better user experience that also ensured scalability. It was also in desperate need of a responsiveness overhaul for lab operatives that needed to access the information on small or midsize devices. Analitics were also added to track which files were downloaded most frequently so that the UI and database could be organized accordingly.
+                                </span>
+
+                                <div className={styles.techIcons2}>
+                                    <DiJavascript1 className={styles.techIcon} />
+                                    <DiAngularSimple className={styles.techIcon} />
+                                    <DiCss3 className={styles.techIcon} />
+                                    <DiHtml5 className={styles.techIcon} />
+                                </div>
+
+                                <div className={styles.pictureBackground2}>
+                                    <video src="CDC-Redesign.mp4" type="video/mp4" controls autoPlay loop muted playsInline></video>
+                                </div>
+
+                            </div>
                         </div>
+
+                        <div className={styles.project1Wrapper}>
+
+                            <div className={styles.projectBackground}>
+                                <div className={styles.title}>Hike + Seek Outfitters</div>
+                                <span className={styles.projectDescription}>Our team of 4 built this modern e-commerce application, drawing inspiration from industry leaders like REI and Northface
+
+                                    Features a dynamic cart and account system which allows users to pick up where they left off on different devices, experience a simulated checkout, and track their order history. An admin interface was created for inventory management- such as adding or removing products- in addition to warehouse stock tracking which is stored and persisted for every available product ensuring that orders cannot be created unless they can be fulfilled.</span>
+
+                                <div className={styles.techIcons}>
+                                    <DiReact className={styles.techIcon} />
+                                    <SiExpress className={styles.techIcon} />
+                                    <DiNodejsSmall className={styles.techIcon} />
+                                    <DiPostgresql className={styles.techIcon} />
+                                    <DiBootstrap className={styles.techIcon} />
+                                    <DiCss3 className={styles.techIcon} />
+                                    <DiHtml5 className={styles.techIcon} />
+
+                                </div>
+
+                                <div className={styles.pictureBackground}>
+                                    {/* <a className={styles.Link} href="https://super-semolina-b1e7cc.netlify.app/" target="_blank" rel="noreferrer">
+                                        <img className={styles.screenshot} src="strangersThingsScreenshot4.PNG" alt='Connected'></img>
+                                    </a> */}
+                                    <video src="HikeSeek.mp4" type="video/mp4" controls autoPlay loop muted playsInline>
+
+                                    </video>
+                                </div>
+
+                            </div>
+                        </div>
+
 
                     </div>
-                </div>
-
-                <div className={styles.project1Wrapper}>
-                    <div className={styles.projectBackground2}>
-                        <div className={styles.titleRight}>Connected - Browser Game</div>
-                        <span className={styles.projectDescription2}>An enjoyable browser game built from the ground up. Features a fully functional, home-grown, AI opponent that capitalizes on winning setups and blocks your attempts to win. The goal was to demo my Javascript skills through a simple game with a relatively complex logical framework as it relates to the DOM. Please feel free and hop on and play a game against that insidious AI! Side note - I built this early in my journey which means it's unfortunately not mobile friendly - enjoy this one on your desktop or laptop!</span>
-
-                        <div className={styles.techIcons2}>
-                            <DiJavascript1 className={styles.techIcon} />
-                            <DiCss3 className={styles.techIcon} />
-                            <DiHtml5 className={styles.techIcon} />
-                        </div>
-
-                        <div className={styles.pictureBackground2}>
-                            <a className={styles.Link} href="https://connect4-z613.onrender.com" target="_blank" rel="noreferrer">
-                                <img className={styles.screenshot2} src="connectedScreenshot.PNG" alt='Connected'></img>
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div className={styles.project1Wrapper}>
-                    <div className={styles.projectBackground}>
-                        <div className={styles.title}>Stranger's Things Inc.</div>
-
-                        <span className={styles.projectDescription}> A web-app that aims to mirror the intricacies and subtle complexities of Craigslist, built from the ground up. Users can
-                            post items for sale, edit existing posts, message sellers to inquire about their items, and so much more!
-                            It features in-depth REST API integration that handles user authentication, creating and editing posts, and sending
-                            messages to other users on the platform. Designed and implemented a user-friendly UI with all CSS written from scratch for bare-bones but effective styling display.</span>
-
-                        <div className={styles.techIcons}>
-                            <DiReact className={styles.techIcon} />
-                            <SiExpress className={styles.techIcon} />
-                            <DiNodejsSmall className={styles.techIcon} />
-                            <DiPostgresql className={styles.techIcon} />
-                            <DiCss3 className={styles.techIcon} />
-                            <DiHtml5 className={styles.techIcon} />
-
-                        </div>
-
-                        <div className={styles.pictureBackground}>
-                            <a className={styles.Link} href="https://super-semolina-b1e7cc.netlify.app/" target="_blank" rel="noreferrer">
-                                <img className={styles.screenshot} src="strangersThingsScreenshot4.PNG" alt='Connected'></img>
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-
-
-            </div>
-            </>
+                </>
             }
         </div>
     )

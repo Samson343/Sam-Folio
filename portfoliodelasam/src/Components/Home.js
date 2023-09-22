@@ -30,6 +30,8 @@ function Home({ setRouteTo, rotateBox, setRotateBox, scrollPosition, setScrollPo
   return (
     <>
       <div className={styles.homeRoot}>
+        <div className={styles.background}></div>
+        <div className={styles.backgroundOverlay}></div>
         <div className={`${styles.emailWrapper}`}>
           <img className={styles.flowerImage8} src="flowerVine5.png" alt="white flowers"></img>
           <p className={`${styles.emailLine} ${styles.slideInTop}`}></p>

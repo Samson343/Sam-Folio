@@ -8,6 +8,8 @@ import { HiDocumentDuplicate } from 'react-icons/hi'
 function Contact() {
   return (
     <div className={styles.contactRoot}>
+      <div className={styles.background}></div>
+      <div className={styles.backgroundOverlay}></div>
       <div className={styles.aboutHeaderWrapper}>
         <h3 className={styles.aboutHeader}>
           <span className={styles.numbers}>.04</span >

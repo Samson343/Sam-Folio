@@ -38,6 +38,8 @@ function About({ setRouteTo, scrollPosition }) {
       {isVisible &&
         <div className={styles.fadeIn}>
           <>
+            <div className={styles.background}></div>
+            <div className={styles.backgroundOverlay}></div>
             <div className={styles.aboutHeaderWrapper}>
               <h3 className={styles.aboutHeader}>
                 <span className={styles.numbers}>.01</span >
@@ -61,7 +63,7 @@ function About({ setRouteTo, scrollPosition }) {
                   </div>
 
                   <p className={styles.aboutDescription}>
-                    I'm a career changer jumping into tech from a background of dietetics. Since I'm late to the party I know I have to show up bearing gifts to make up for it. That's why I study late into the night, get a handle on the bleeding edge of tech, and pour my heart into everything I create. </p>
+                    I'm a fullstack web developer with a particular love for frontend engineering. I become obsessed with difficult problems, stay up late to get a handle on the bleeding edge of tech, and pour my heart into everything I create. </p>
                 </div>
                 <div className={styles.listWrapper}>
                   <ul className={styles.techList}> Frontend
