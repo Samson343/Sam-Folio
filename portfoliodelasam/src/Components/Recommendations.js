@@ -56,7 +56,7 @@ function Recommendations({ scrollPosition, setScrollPosition }) {
           </>
         }
         <div className={styles.backgroundOpacifier}>
-          <img className={styles.mobile} src={"campfire3.png"} alt=""></img>
+          <img className={styles.mobile} src={"blueBackground7.jpg"} alt=""></img>
           {isVisible &&
             <Controller>
               <Scene duration={'173%'} triggerHook={0.3} pin className={styles.scrollContainer}>

@@ -17,12 +17,12 @@
 }
 
 .contactRoot {
-    min-height: 100vh;
+    min-height: 100dvh;
     background-color: var(--primary);
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
-    padding-top: 2vh;
+  
     /* overflow-x: hidden; */
 }
 
