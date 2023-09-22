@@ -44,7 +44,7 @@ function Home({ setRouteTo, rotateBox, setRotateBox, scrollPosition, setScrollPo
             <p className={styles.nameText}>Samuel Banister</p>
             <p className={styles.descriptionText}>I use code to build beautiful things. My cats are my best friends and they annoy the hell out of me. My wife keeps me tethered to planet earth.</p>
 
-            <a className={styles.featuredLink} href="https://hike-seek.onrender.com/" target="blank">
+            <a className={styles.featuredLink} href="https://www.shakeygraves.com/" target="blank">
               <button className={`${styles.button} ${styles.penisLink}`}
               >Featured Project</button>
             </a>

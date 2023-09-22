@@ -4,11 +4,11 @@
   background-position:center;
   background-size: cover;
   position: absolute;
-  height: 100%;
+  min-height: 100dvh;
   width: 100%;
 }
 .backgroundOverlay {
-  height: 100%;
+    min-height: 100dvh;
   width: 100%;
   position: absolute;
   z-index: 0;

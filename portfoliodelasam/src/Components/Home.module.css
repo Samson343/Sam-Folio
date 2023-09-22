@@ -892,6 +892,7 @@ body::-webkit-scrollbar-track-piece {
   }
   .homeRoot {
     border-bottom: none;
+    z-index: 0;
   }
   .snowflake:nth-of-type(7) {
     /* display: none; */

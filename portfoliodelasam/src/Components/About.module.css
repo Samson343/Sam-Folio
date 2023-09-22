@@ -1,6 +1,7 @@
 .aboutRoot {
     min-height: 100vh;
     background-color: var(--primary);
+    z-index: 1;
 }
 .background {
   background-image: url('../../public/blueBackground4.jpg');
