@@ -62,9 +62,10 @@ function Recommendations({ scrollPosition, setScrollPosition }) {
               <Scene duration={'173%'} triggerHook={0.3} pin className={styles.scrollContainer}>
 
                 <div className={styles.centerWrapper1}>
-                  <BsFillChatRightQuoteFill size={"7.2vmin"} className={styles.quoteIcon} />
+            
 
                   <div className={styles.centerBox}>
+                  <BsFillChatRightQuoteFill size={"7.2vmin"} className={styles.quoteIcon} />
                     <p className={styles.reko1}>Sam was an exceptional student during his time at Fullstack Academy, consistently demonstrating a high level of intelligence and work ethic.</p>
                   </div>
                 </div>
@@ -93,8 +94,8 @@ function Recommendations({ scrollPosition, setScrollPosition }) {
           <Controller>
             <Scene duration={'173%'} triggerHook={0.3} pin>
               <div className={styles.centerWrapperMid}>
-                <BsChatLeftQuote size={"7.2vmin"} className={styles.quoteIconMid} />
                 <div className={styles.centerBoxMid}>
+                <BsChatLeftQuote size={"7.2vmin"} className={styles.quoteIconMid} />
                   <p className={styles.rekoMid} >Sam always stood out as a talented developer, constantly going above and beyond what we covered in our course by exploring and implementing new technologies and techniques whenever possible.</p>
                 </div>
               </div>
@@ -106,8 +107,9 @@ function Recommendations({ scrollPosition, setScrollPosition }) {
           <Controller>
             <Scene duration={'173%'} triggerHook={0.3} pin>
               <div className={styles.centerWrapper}>
-                <BsFillChatRightQuoteFill size={"7.2vmin"} className={styles.quoteIcon} />
+                
                 <div className={styles.centerBox}>
+                <BsFillChatRightQuoteFill size={"7.2vmin"} className={styles.quoteIcon} />
                   <p className={`${styles.reko} ${styles.animateFlicker}`}>I'm an inovator that would love to keep your company modern and relavent. If you like what you see, let's connect.</p>
                 </div>
               </div>

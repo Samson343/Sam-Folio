@@ -55,7 +55,7 @@
     /* border: 1px solid white; */
     left: 0;
     height: 22vh;
-
+    
 
     /* border: 1px solid white; */
     display: flex;
@@ -83,7 +83,7 @@
     /* padding-right: 2%; */
     -webkit-animation: focus-in-contract 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s both;
     animation: focus-in-contract 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.2s both;
-
+    
 }
 
 
@@ -96,7 +96,7 @@
     /* border: 1px solid white; */
     left: 0;
     height: 22vh;
-
+    
 
     /* border: 1px solid white; */
     display: flex;
@@ -125,8 +125,8 @@
     margin-bottom: 5px;
     display: flex;
     align-items: center;
-    
-
+    justify-content: center;
+    position: relative;
 }
 
 .centerBoxMid {
@@ -134,12 +134,13 @@
     /* height: 80%; */
     width: 32vmin;
     margin-right: 5px;
-    padding: 2vmin 5vmin 0;
+    padding: 2vmin 5vmin;
     /* margin-right: 18%; */
     color: white;
     font-family: var(--font-mono);
     font-size: calc(5px + 1vmin);
     border-radius: 4%;
+    position: relative;
     /* border-right: 7px solid var(--navy); */
 
     /* height: 40px;
@@ -150,6 +151,11 @@
     box-shadow: 2px 2px 2px var(--light-slate);
     margin-bottom: 5px;
     overflow-y: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .headshotBefore {
@@ -185,28 +191,29 @@
 .quoteIcon {
     position: absolute;
     top: 0;
-    margin-right: 42%;
+    /* margin-right: 42%; */
+    left: -10%;
     color: white;
 }
 .quoteIconMid {
     position: absolute;
     top: 0;
-    margin-left: 41.5%;
+    right: -10%;
     color: white;
 }
 
 .reko {
     border-right: 1px solid var(--light-slate);
     font-size: calc(2px + 0.8em);
-    padding-right: 20px;
-    margin-bottom: 40px;
+    /* padding-right: 20px;
+    margin-bottom: 40px; */
 }
 .reko1{
     border-right: 1px solid var(--light-slate);
     font-size: calc(2px + 0.8em);
     padding-right: 20px;
-    margin-bottom: 40px;
-    margin-top: 15px;
+    /* margin-bottom: 40px;
+    margin-top: 15px; */
 }
 .rekoMid {
     border-left: 1px solid var(--light-slate);
@@ -469,7 +476,7 @@
     .centerBox {
         width: 90%;
         margin-top: 10%;
-        padding-top: 5%;
+        /* padding-top: 5%; */
         margin-left: 10%;
         overflow-y: hidden;
     }
