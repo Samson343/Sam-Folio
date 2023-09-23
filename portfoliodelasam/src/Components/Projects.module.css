@@ -9,13 +9,15 @@
 .background {
   background-image: url('../../public/blueBackground4.jpg');
   background-position:center;
-  background-repeat: repeat-y;
+  background-repeat: repeat;
   background-size: contain;
   position: absolute;
-  height: 260vh;
   width: 100%;
   transform: scaleY(-1);
-
+     @media screen and (max-width: 576px) {
+      background-size: cover;
+      height: 275vh;
+     }
 }
 .backgroundOverlay {
   height: 260vh;
@@ -23,6 +25,10 @@
   position: absolute;
   z-index: 0;
   background-color: rgb(5, 20, 42, 0.9);
+
+  @media screen and (max-width: 576px) {
+    height: 275vh;
+   }
 }
 
 .projectWrapper {
